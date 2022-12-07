@@ -25,14 +25,14 @@ const boardRoutes = require('./api/board/board.routes')
 const groupRoutes = require('./api/group/group.routes')
 const taskRoutes = require('./api/task/task.routes')
 const userRoutes = require('./api/user/user.routes')
-const activityRoutes =require('./api/activity/activity.routes')
+const activityRoutes = require('./api/activity/activity.routes')
 // const authRoutes = require('./api/auth/auth.routes')
 
 
 // const userRoutes = require('./api/user/user.routes')
 // const reviewRoutes = require('./api/review/review.routes')
 // const carRoutes = require('./api/car/car.routes')
-const {setupSocketAPI} = require('./services/socket.service')
+const { setupSocketAPI } = require('./services/socket.service')
 
 // routes
 const setupAsyncLocalStorage = require('./middlewares/setupAls.middleware')

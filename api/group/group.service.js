@@ -4,8 +4,8 @@ const boardService = require('../board/board.service')
 
 async function query(groupId, boardId) {
     if (!groupId || !boardId) return Promise.reject('Cannot get group')
-    const board = (await boardService.query({id:boardId})).board
-
+    const data = (await boardService.query({ id: boardId }))
+    const { board } = data
     if (!board) return Promise.reject('Board not found')
     console.log(`groupId`, groupId)
     return board.groups.find(anyGroup => anyGroup._id === groupId)
@@ -14,11 +14,12 @@ async function query(groupId, boardId) {
 async function add(group, isFifo = true) {
     try {
         const { boardId } = group
-        const board = await boardService.query({ id: boardId }).board
+        const data = await boardService.query({ id: boardId })
+        const { board } = data
         group._id = utilService.makeId()
         isFifo
             ? board.groups.push(group)
-            : board.unshift(group)
+            : board.groups.unshift(group)
         boardService.update(board)
     } catch (err) {
         logger.error('cannot insert group', err)
@@ -28,7 +29,8 @@ async function add(group, isFifo = true) {
 
 async function remove(groupId, boardId) {
     if (!groupId || !boardId) return Promise.reject('Cannot remove group')
-    const board = await boardService.query({ id: boardId }).board
+    const data = await boardService.query({ id: boardId })
+    const { board } = data
     if (!board) return Promise.reject('Board not found')
     const idx = board.groups.findIndex(anyGroup => anyGroup._id === groupId)
     if (idx === -1) return Promise.reject('Group not found')
@@ -47,8 +49,8 @@ async function update(group, isFifo = true) {
         if (idx === -1) return Promise.reject('Group not found')
         board.groups[idx] = group
     } else {
-        isFifo 
-            ? board.groups.unshift(group) 
+        isFifo
+            ? board.groups.unshift(group)
             : board.groups.push(group)
     }
     console.log(`group._id`, group._id)

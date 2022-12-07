@@ -5,6 +5,7 @@ const logger = require('../../services/logger.service')
 async function add(req, res) {
     // const {loggedinUser} = req
     try {
+        console.log(req.body);
         const { task, isFifo } = req.body
         // task.owner = loggedinUser
         await taskService.add(task, isFifo)
@@ -17,9 +18,9 @@ async function add(req, res) {
 async function addMany(req, res) {
     // const {loggedinUser} = req
     try {
-        const { tasks, tasksCopy , boardId} = req.body
+        const { tasks, tasksCopy, boardId } = req.body
         // task.owner = loggedinUser
-        await taskService.addMany(tasks, tasksCopy,boardId)
+        await taskService.addMany(tasks, tasksCopy, boardId)
         res.json(tasks)
     } catch (err) {
         logger.error('Failed to add task', err)
@@ -29,8 +30,8 @@ async function addMany(req, res) {
 
 async function update(req, res) {
     try {
-        const {task, isFifo, isDuplicate} = req.body
-        await taskService.update(task,isFifo, isDuplicate)
+        const { task, isFifo, isDuplicate } = req.body
+        await taskService.update(task, isFifo, isDuplicate)
         res.json(task)
     } catch (err) {
         logger.error('Failed to update task', err)
@@ -41,9 +42,9 @@ async function update(req, res) {
 
 async function remove(req, res) {
     try {
-        const taskId = req.params.id
-        await taskService.remove(taskId)
-        res.send(taskId)
+        const task = req.body
+        await taskService.remove(task)
+        res.send(task)
     } catch (err) {
         logger.error('Failed to remove task', err)
         res.status(500).send({ err: 'Failed to remove task' })

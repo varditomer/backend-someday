@@ -10,7 +10,7 @@ const router = express.Router()
 router.post('/', add)
 router.post('/:id', duplicate)
 router.put('/:id', update)
-router.delete('/:id', remove)
+router.delete('/', remove)
 
 // router.post('/:id/msg', requireAuth, addCarMsg)
 // router.delete('/:id/msg/:msgId', requireAuth, removeCarMsg)

@@ -6,6 +6,7 @@ async function add(req, res) {
   // const {loggedinUser} = req
   try {
     // group.owner = loggedinUser
+    const { group, isFifo } = req.body
     await groupService.add(group, isFifo)
     res.json(group)
   } catch (err) {
@@ -17,7 +18,7 @@ async function add(req, res) {
 
 async function update(req, res) {
   try {
-    const {group} = req.body
+    const { group } = req.body
     await groupService.update(group)
     res.json(group)
   } catch (err) {
@@ -29,7 +30,9 @@ async function update(req, res) {
 
 async function remove(req, res) {
   try {
-    const { groupId, boardId } = req.query
+    const { groupId, boardId } = req.body
+    // console.log('this is body');
+    // console.log(req.body);
     await groupService.remove(groupId, boardId)
     res.send(groupId)
   } catch (err) {
