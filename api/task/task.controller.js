@@ -18,7 +18,6 @@ async function addMany(req, res) {
     // const {loggedinUser} = req
     try {
         const { tasks, tasksCopy, boardId } = req.body
-        // task.owner = loggedinUser
         await taskService.addMany(tasks, tasksCopy, boardId)
         res.json(tasks)
     } catch (err) {
@@ -29,7 +28,7 @@ async function addMany(req, res) {
 
 async function update(req, res) {
     try {
-        console.log( req.body);
+        console.log(req.body);
         const { task, isFifo, isDuplicate } = req.body
         await taskService.update(task, isFifo, isDuplicate)
         res.json(task)
