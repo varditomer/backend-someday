@@ -106,7 +106,7 @@
                     "groupId": "zjyKO",
                     "boardId": "639077a55232d8771e735007",
                     "title": "Create all base files",
-                    "status": "sdc34",
+                    "status": "db03v",
                     "date": 1668463200000.0,
                     "comments": [],
                     "_id": "jpMFf",
@@ -205,7 +205,7 @@
                     "boardId": "639077a55232d8771e735007",
                     "groupId": "zjyKO",
                     "title": "Make the project ours",
-                    "status": "sdc34",
+                    "status": "bb3354",
                     "priority": "gbf0g",
                     "date": 1668981600000.0,
                     "timeline": {
@@ -288,7 +288,7 @@
                     "title": "Get familiar with features",
                     "date": 1668808800000.0,
                     "priority": "asckj",
-                    "status": "Working on it",
+                    "status": "dfbyc",
                     "person": [
                         {
                             "_id": "u102",
