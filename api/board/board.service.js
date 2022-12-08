@@ -134,7 +134,7 @@ async function _getDataMap(board) {
         if (!groupTitle.includes(group.title)) groupTitle.push(group.title)
         group.tasks.forEach(task => {
             for (let prop in taskFilter) {
-                if (!taskFilter[prop].includes(task[prop])) taskFilter[prop].push(task[prop])
+                if (task[prop] && !taskFilter[prop].includes(task[prop])) taskFilter[prop].push(task[prop])
             }
         })
     })
