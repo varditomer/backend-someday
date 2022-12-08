@@ -30,8 +30,6 @@ const activityRoutes = require('./api/activity/activity.routes')
 
 
 // const userRoutes = require('./api/user/user.routes')
-// const reviewRoutes = require('./api/review/review.routes')
-// const carRoutes = require('./api/car/car.routes')
 const { setupSocketAPI } = require('./services/socket.service')
 
 // routes

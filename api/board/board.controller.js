@@ -5,11 +5,11 @@ async function query(req, res) {
   try {
     // const parsedFilter = JSON.parse(req.query.filterBy)
     let filterBy = {
-      id: req.params.id || '',
-      txt: req.params.txt || '',
-      person: req.params.person || '',
-      groupTitles: req.params.groupTitles || '',
-      tasks: req.params.tasks || '',
+      id: req.query.id || '',
+      txt: req.query.txt || '',
+      userId: req.query.userId || '',
+      groupTitles: req.query.groupTitles || '',
+      tasks: req.query.tasks || '',
     }
     const data = await boardService.query(filterBy)
     res.send(data)
@@ -25,8 +25,8 @@ async function add(req, res) {
   try {
     const board = req.body
     // board.owner = loggedinUser
-    await boardService.add(board)
-    res.json(board)
+    const data = await boardService.add(board)
+    res.json(data)
   } catch (err) {
     logger.error('Failed to add board', err)
     res.status(500).send({ err: 'Failed to add board' })
@@ -61,7 +61,7 @@ async function remove(req, res) {
 async function removeTasks(req, res) {
   try {
     const boardId = req.params.id
-    const {taskIds} = req.query
+    const { taskIds } = req.query
     await boardService.removeManyTasks(taskIds, boardId)
     res.send(boardId)
   } catch (err) {
@@ -71,7 +71,7 @@ async function removeTasks(req, res) {
 }
 
 async function newBoardMsg(req, res) {
-  const {loggedinUser} = req
+  const { loggedinUser } = req
   try {
     const boardId = req.params.id
     const msg = {
@@ -88,10 +88,10 @@ async function newBoardMsg(req, res) {
 }
 
 async function deleteBoardMsg(req, res) {
-  const {loggedinUser} = req
+  const { loggedinUser } = req
   try {
     const boardId = req.params.id
-    const {msgId} = req.params
+    const { msgId } = req.params
 
     const removedId = await boardService.deleteBoardMsg(boardId, msgId)
     res.send(removedId)

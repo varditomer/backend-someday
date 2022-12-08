@@ -11,7 +11,7 @@ async function query(filterBy = {}) {
         else board = (await collection.find().toArray())[0]
         if (filterBy.groupTitles || filterBy.tasks) board = await _multiFilter(filterBy, board)
         else {
-            if (filterBy.person) board = _filterByPerson(board, filterBy.person)
+            if (filterBy.userId) board = _filterByPerson(board, filterBy.userId)
             if (filterBy.txt) board = _filterByTxt(board, filterBy.txt)
         }
         const res = {
@@ -39,7 +39,11 @@ async function remove(boardId) {
 async function add(board) {
     try {
         const collection = await dbService.getCollection('board')
-        await collection.insertOne(board)
+        let newBoard = await collection.insertOne(board)
+        newBoard = newBoard.ops[0]
+        newBoard = _connectIds(newBoard)
+        await update(newBoard)
+        return { board: newBoard, miniBoards: _getMiniBoards(), dataMap: _getDataMap(newBoard) }
     } catch (err) {
         logger.error('cannot insert board', err)
         throw err
@@ -149,7 +153,6 @@ async function _getMiniBoards() {
 
 
 function _filterByPerson(board, id) {
-    console.log(`id`, id)
     if (!id) return board
     board.groups = board.groups.filter(group => {
         if (!group.tasks || !group.tasks.length) return false

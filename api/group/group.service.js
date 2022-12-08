@@ -17,9 +17,10 @@ async function add(group, isFifo = true) {
         const data = await boardService.query({ id: boardId })
         const { board } = data
         group._id = utilService.makeId()
+        const groupToSave = _connectIds(group)
         isFifo
-            ? board.groups.push(group)
-            : board.groups.unshift(group)
+            ? board.groups.push(groupToSave)
+            : board.groups.unshift(groupToSave)
         boardService.update(board)
     } catch (err) {
         logger.error('cannot insert group', err)
@@ -53,7 +54,6 @@ async function update(group, isFifo = true) {
             ? board.groups.unshift(group)
             : board.groups.push(group)
     }
-    console.log(`group._id`, group._id)
     await boardService.update(board)
 }
 
@@ -69,7 +69,6 @@ async function duplicate(groupId, boardId) {
 }
 
 function _connectIds(group) {
-    console.log(`fghjklkj`)
     group._id = utilService.makeId()
     group.tasks.forEach(task => task.groupId = group._id)
     return group

@@ -5,7 +5,6 @@ const logger = require('../../services/logger.service')
 async function add(req, res) {
     // const {loggedinUser} = req
     try {
-        console.log(req.body);
         const { task, isFifo } = req.body
         // task.owner = loggedinUser
         await taskService.add(task, isFifo)
@@ -30,6 +29,7 @@ async function addMany(req, res) {
 
 async function update(req, res) {
     try {
+        console.log( req.body);
         const { task, isFifo, isDuplicate } = req.body
         await taskService.update(task, isFifo, isDuplicate)
         res.json(task)
