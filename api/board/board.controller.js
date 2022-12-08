@@ -35,10 +35,10 @@ async function add(req, res) {
 
 
 async function update(req, res) {
-  console.log(`req.body`, req.body)
   try {
     const board = req.body
-    await boardService.update(board)
+    const data = await boardService.update(board)
+    console.log(data);
     res.json(board)
   } catch (err) {
     logger.error('Failed to update board', err)
