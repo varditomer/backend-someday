@@ -4,14 +4,9 @@ const logger = require('../../services/logger.service')
 async function query(req, res) {
   try {
     // const parsedFilter = JSON.parse(req.query.filterBy)
-    let filterBy = {
-      id: req.query.id || '',
-      txt: req.query.txt || '',
-      userId: req.query.userId || '',
-      groupTitles: req.query.groupTitles || '',
-      tasks: req.query.tasks || '',
-    }
-    const data = await boardService.query(filterBy)
+    const {id} = req.params
+    console.log(`id`, id)
+    const data = await boardService.query(id)
     res.send(data)
   } catch (err) {
     logger.error('Failed to get boards', err)

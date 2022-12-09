@@ -3,17 +3,12 @@ const logger = require('../../services/logger.service')
 const utilService = require('../../services/util.service')
 const ObjectId = require('mongodb').ObjectId
 
-async function query(filterBy = {}) {
+async function query(id) {
     try {
         let board
         const collection = await dbService.getCollection('board')
-        if (filterBy.id) board = await collection.findOne({ _id: ObjectId(filterBy.id) })
+        if (id) board = await collection.findOne({ _id: ObjectId(id) })
         else board = (await collection.find().toArray())[0]
-        if (filterBy.groupTitles || filterBy.tasks) board = await _multiFilter(filterBy, board)
-        else {
-            if (filterBy.userId) board = _filterByPerson(board, filterBy.userId)
-            if (filterBy.txt) board = _filterByTxt(board, filterBy.txt)
-        }
         const res = {
             board,
             miniBoards: await _getMiniBoards(board),
