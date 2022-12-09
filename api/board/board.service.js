@@ -59,27 +59,18 @@ async function update(board) {
 
 async function removeManyTasks(taskIds, boardId) {
     if (!taskIds?.length || !boardId) return
-    const board = await query(boardId)
-    if (!board) return Promise.reject('Cannot finf board')
-    board.groups = board.groups.reduce((groupArr, group) => {
-        if (!taskIds.length) {
-            groupArr.push(group)
-            return groupArr
-        }
-        group.tasks = group.tasks.reduce((tasksToKeep, task) => {
-            if (!taskIds.length) {
-                tasksToKeep.push(task)
-                return tasksToKeep
-            }
-            const idx = taskIds.indexOf(task._id)
-            if (idx === -1) tasksToKeep.push(task)
-            else taskIds.splice(idx, 1)
-            return tasksToKeep
+    const data = await query({ id: boardId })
+    if (!data) return Promise.reject('Cannot find board')
+    const { board } = data
+    board.groups = board.groups.map(group => {
+        group.tasks = group.tasks.reduce((tasks, task) => {
+            if (!taskIds.includes(task._id)) tasks.push(task)
+            return tasks
         }, [])
-        groupArr.push(group)
-        return groupArr
-    }, [])
+        return group
+    })
     await update(board)
+    return board
 }
 
 

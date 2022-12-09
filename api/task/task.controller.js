@@ -1,6 +1,6 @@
 const taskService = require('./task.service.js')
 const logger = require('../../services/logger.service')
-
+const socketService = require('../../services/socket.service')
 
 async function add(req, res) {
     // const {loggedinUser} = req
@@ -18,7 +18,6 @@ async function addMany(req, res) {
     // const {loggedinUser} = req
     try {
         const { tasks, tasksCopy, boardId } = req.body
-        // task.owner = loggedinUser
         await taskService.addMany(tasks, tasksCopy, boardId)
         res.json(tasks)
     } catch (err) {
@@ -29,9 +28,14 @@ async function addMany(req, res) {
 
 async function update(req, res) {
     try {
-        console.log( req.body);
+        console.log(req.body);
         const { task, isFifo, isDuplicate } = req.body
         await taskService.update(task, isFifo, isDuplicate)
+        socketService.emitTo({
+            type: 'task-added',
+            data: task,
+            label: 'task-added'
+        })
         res.json(task)
     } catch (err) {
         logger.error('Failed to update task', err)

@@ -1,5 +1,6 @@
 const groupService = require('../group/group.service')
 const utilService = require('../../services/util.service')
+const boardService = require('../board/board.service')
 
 
 async function add(task, isFifo, isDuplicate) {
@@ -47,22 +48,19 @@ async function remove(task) {
 
 
 async function addMany(tasks, tasksCopy, boardId) {
-    const board = await boardService.query({ id: boardId }).board
+    const data = await boardService.query({ id: boardId })
+    const { board } = data
     const boardCopy = JSON.parse(JSON.stringify(board))
     boardCopy.groups.forEach((group, groupIdx) => {
-        tasks.forEach(task => {
-            if (group.tasks.some((groupTask, tasksIdx) => task._id === groupTask._id)) {
-                if (!tasksCopy[taskIdx]) tasksCopy[taskIdx] = utilService.makeId()
-                board.groups[groupIdx].tasks.unshift(tasksCopy[taskIdx])
+        tasks.forEach((task, taskIdx) => {
+            if (group.tasks.find(anyTask => anyTask._id === task._id)) {
+
+                board.groups[groupIdx].tasks.push(tasksCopy[taskIdx])
             }
         })
     })
+    console.log(board.groups[0])
     boardService.update(board)
-}
-
-async function _saveMultiple(tasks, isFifo, isDuplicate) {
-    const savedTasks = tasks.map(task => save(task, isFifo, isDuplicate))
-    return Promise.all(savedTasks)
 }
 
 function _replaceTaskEntitiesIds(taskToDuplicate) {

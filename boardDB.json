@@ -87,16 +87,22 @@
                     }
                 },
                 {
-                    "_id" : "KT5Eo",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "Yha4d",
-                    "title" : "Build demo data",
-                    "date" : 1670450400000.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(5),
-                            "year" : NumberInt(2022)
+                    "groupId": "zjyKO",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Create all base files",
+                    "status": "Unattained",
+                    "date": 1668463200000.0,
+                    "comments": [],
+                    "_id": "jpMFf",
+                    "priority": "acmksd",
+                    "numbers": NumberInt(55),
+                    "person": [
+                        {
+                            "_id": "u104",
+                            "style": "background-image: url(src/assets/imgs/ronen-avatar.png)",
+                            "initials": "RB",
+                            "fullname": "Ronen Boxer",
+                            "pic": true
                         },
                         "end" : {
                             "month" : NumberInt(0),
@@ -157,16 +163,18 @@
                     ]
                 },
                 {
-                    "_id" : "7teZJ",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "Yha4d",
-                    "title" : "Build flow",
-                    "date" : 1670277600000.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(9),
-                            "day" : NumberInt(30),
-                            "year" : NumberInt(2022)
+                    "_id": "3Exi3",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "zjyKO",
+                    "title": "Make the project ours",
+                    "status": "Stuck",
+                    "priority": "gbf0g",
+                    "date": 1668981600000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(3),
+                            "year": NumberInt(2022)
                         },
                         "end" : {
                             "month" : NumberInt(11),

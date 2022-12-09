@@ -33,7 +33,6 @@ async function update(req, res) {
   try {
     const board = req.body
     const data = await boardService.update(board)
-    console.log(data);
     res.json(board)
   } catch (err) {
     logger.error('Failed to update board', err)
@@ -55,10 +54,9 @@ async function remove(req, res) {
 
 async function removeTasks(req, res) {
   try {
-    const boardId = req.params.id
-    const { taskIds } = req.query
-    await boardService.removeManyTasks(taskIds, boardId)
-    res.send(boardId)
+    const { boardId, taskIds } = req.body
+    const board = await boardService.removeManyTasks(taskIds, boardId)
+    res.send(board)
   } catch (err) {
     logger.error('Failed to remove board', err)
     res.status(500).send({ err: 'Failed to remove board' })
