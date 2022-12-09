@@ -8,7 +8,7 @@ async function query(id) {
         let board
         const collection = await dbService.getCollection('board')
         if (id) board = await collection.findOne({ _id: ObjectId(id) })
-        else board = (await collection.find().toArray())[0]
+        else board = (await collection.find().toArray())[0]        
         const res = {
             board,
             miniBoards: await _getMiniBoards(board),

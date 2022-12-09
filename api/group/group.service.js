@@ -4,10 +4,9 @@ const boardService = require('../board/board.service')
 
 async function query(groupId, boardId) {
     if (!groupId || !boardId) return Promise.reject('Cannot get group')
-    const data = (await boardService.query({ id: boardId }))
+    const data = (await boardService.query(boardId))
     const { board } = data
     if (!board) return Promise.reject('Board not found')
-    console.log(`groupId`, groupId)
     return board.groups.find(anyGroup => anyGroup._id === groupId)
 }
 
@@ -43,7 +42,8 @@ async function remove(groupId, boardId) {
 async function update(group, isFifo = true) {
     const { boardId } = group
     if (!group || !boardId) return Promise.reject('Cannot save group')
-    const board = (await boardService.query({ id: boardId })).board
+    const data = (await boardService.query(boardId))
+    const { board } = data
     if (!board) return Promise.reject('Board not found')
     if (group._id) {
         const idx = board.groups.findIndex(anyGroup => anyGroup._id === group._id)

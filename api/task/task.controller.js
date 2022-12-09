@@ -28,14 +28,8 @@ async function addMany(req, res) {
 
 async function update(req, res) {
     try {
-        console.log(req.body);
         const { task, isFifo, isDuplicate } = req.body
         await taskService.update(task, isFifo, isDuplicate)
-        socketService.emitTo({
-            type: 'task-added',
-            data: task,
-            label: 'task-added'
-        })
         res.json(task)
     } catch (err) {
         logger.error('Failed to update task', err)

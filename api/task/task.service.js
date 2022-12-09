@@ -6,6 +6,7 @@ const boardService = require('../board/board.service')
 async function add(task, isFifo, isDuplicate) {
     task._id = utilService.makeId()
     const group = await groupService.query(task.groupId, task.boardId)
+    console.log(group);
     isFifo
         ? group.tasks.push(isDuplicate ? _replaceTaskEntitiesIds(task) : task)
         : group.tasks.unshift(isDuplicate ? _replaceTaskEntitiesIds(task) : task)
