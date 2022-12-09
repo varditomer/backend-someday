@@ -1,69 +1,15 @@
 const authService = require('./auth.service')
 const logger = require('../../services/logger.service')
-<<<<<<< HEAD
-
-=======
-// const { google } = require('googleapis')
-
-// const oauth2Client = new google.auth.OAuth2(
-//     `856304661727-9s62u14qk5du0dmc3n12eeiah47o8j26.apps.googleusercontent.com`,
-//     `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`,
-//     `http://localhost:5173/api/auth/login`
-// )
-
-// const scopes = [
-//     'https://www.googleapis.com/auth/drive.metadata.readonly'
-// ];
-
-
-// const authorizationUrl = oauth2Client.generateAuthUrl({
-//     // 'online' (default) or 'offline' (gets refresh_token)
-//     access_type: 'offline',
-//     /** Pass in the scopes array defined above.
-//       * Alternatively, if only one scope is needed, you can pass a scope URL as a string */
-//     scope: scopes,
-//     // Enable incremental authorization. Recommended as a best practice.
-//     include_granted_scopes: true
-// });
-
-// async function getDecodedOAuthJwtGoogle(token) {
-//     const CLIENT_ID_GOOGLE = '856304661727-9s62u14qk5du0dmc3n12eeiah47o8j26.apps.googleusercontent.com'
-
-//     try {
-//         const client = new OAuth2Client(CLIENT_ID_GOOGLE)
-
-//         const ticket = await client.verifyIdToken({
-//             idToken: token,
-//             audience: CLIENT_ID_GOOGLE,
-//         })
-//         return ticket
-//     } catch (error) {
-//         return { status: 500, data: error }
-//     }
-// }
->>>>>>> fbf5be4a196dd6e5fd35106c009bdad972372091
 
 
 async function login(req, res) {
     // const { username, password } = req.body
     try {
-<<<<<<< HEAD
         // const user = await authService.login(username, password)
         // const loginToken = authService.getLoginToken(user)
         // logger.info('User login: ', user)
         // res.cookie('loginToken', loginToken, { sameSite: 'None', secure: true })
         // res.json(user)
-=======
-        // const { clientId, credential } = req.body
-        // const ticket = await getDecodedOAuthJwtGoogle(credential)
-        // console.log(ticket);
-        // // res.writeHead(301, { "Location": authorizationUrl });
-        // // const user = await authService.login(username, password)
-        // // const loginToken = authService.getLoginToken(user)
-        // // logger.info('User login: ', user)
-        // // res.cookie('loginToken', loginToken, { sameSite: 'None', secure: true })
-        // // res.json(user)
->>>>>>> fbf5be4a196dd6e5fd35106c009bdad972372091
         res.send('Baba!')
     } catch (err) {
         logger.error('Failed to Login ' + err)
