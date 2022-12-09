@@ -8,11 +8,6 @@ async function add(req, res) {
         const { task, isFifo } = req.body
         // task.owner = loggedinUser
         await taskService.add(task, isFifo)
-        socketService.emitTo({
-            type: 'task-added',
-            data: task,
-            label: 'task-added'
-        })
         res.json(task)
     } catch (err) {
         logger.error('Failed to add task', err)

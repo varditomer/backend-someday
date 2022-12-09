@@ -54,7 +54,7 @@ async function addMany(tasks, tasksCopy, boardId) {
     boardCopy.groups.forEach((group, groupIdx) => {
         tasks.forEach((task, taskIdx) => {
             if (group.tasks.find(anyTask => anyTask._id === task._id)) {
-                
+
                 board.groups[groupIdx].tasks.push(tasksCopy[taskIdx])
             }
         })
