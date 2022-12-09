@@ -4,7 +4,7 @@ const logger = require('../../services/logger.service')
 async function query(req, res) {
   try {
     // const parsedFilter = JSON.parse(req.query.filterBy)
-    const { id } = req.params
+    const id  = req.params?.id || ''
     const data = await boardService.query(id)
     res.send(data)
   } catch (err) {
