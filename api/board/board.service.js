@@ -8,7 +8,7 @@ async function query(id) {
         let board
         const collection = await dbService.getCollection('board')
         if (id) board = await collection.findOne({ _id: ObjectId(id) })
-        else board = (await collection.find().toArray())[0]        
+        else board = (await collection.find().toArray())[0]
         const res = {
             board,
             miniBoards: await _getMiniBoards(board),
@@ -38,7 +38,9 @@ async function add(board) {
         newBoard = newBoard.ops[0]
         newBoard = _connectIds(newBoard)
         await update(newBoard)
-        return { board: newBoard, miniBoards: _getMiniBoards(), dataMap: _getDataMap(newBoard) }
+        const miniBoards = await _getMiniBoards()
+        const boardData = { board, miniBoards, dataMap: _getDataMap(board) }
+        return boardData
     } catch (err) {
         logger.error('cannot insert board', err)
         throw err
@@ -51,6 +53,9 @@ async function update(board) {
         const boardCopy = JSON.parse(JSON.stringify(board))
         delete boardCopy._id
         await collection.updateOne({ _id: ObjectId(board._id) }, { $set: boardCopy })
+        const miniBoards = await _getMiniBoards()
+        const boardData = { board, miniBoards, dataMap: _getDataMap(board) }
+        return boardData
     } catch (err) {
         logger.error(`cannot update board ${board._id}`, err)
         throw err
@@ -59,7 +64,7 @@ async function update(board) {
 
 async function removeManyTasks(taskIds, boardId) {
     if (!taskIds?.length || !boardId) return
-    const data = await query({ id: boardId })
+    const data = await query(boardId)
     if (!data) return Promise.reject('Cannot find board')
     const { board } = data
     board.groups = board.groups.map(group => {
@@ -70,7 +75,9 @@ async function removeManyTasks(taskIds, boardId) {
         return group
     })
     await update(board)
-    return board
+    const miniBoards = await _getMiniBoards()
+    const boardData = { board, miniBoards, dataMap: _getDataMap(board) }
+    return boardData
 }
 
 

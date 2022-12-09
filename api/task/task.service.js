@@ -49,7 +49,7 @@ async function remove(task) {
 
 
 async function addMany(tasks, tasksCopy, boardId) {
-    const data = await boardService.query({ id: boardId })
+    const data = await boardService.query(boardId)
     const { board } = data
     const boardCopy = JSON.parse(JSON.stringify(board))
     boardCopy.groups.forEach((group, groupIdx) => {

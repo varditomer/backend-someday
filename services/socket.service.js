@@ -35,6 +35,21 @@ function setupSocketAPI(http) {
         socket.on('duplicate-tasks', (tasksToDuplicate) => {
             gIo.emit('tasks-duplicated', tasksToDuplicate)
         })
+        socket.on('remove-group', (group) => {
+            gIo.emit('group-removed', group)
+        })
+        socket.on('save-board', (boardData) => {
+            gIo.emit('board-saved', boardData)
+        })
+        socket.on('add-board', (boardData) => {
+            gIo.emit('board-added', boardData)
+        })
+        socket.on('save-group', (data) => {
+            gIo.emit('group-saved', { data })
+        })
+        socket.on('update-group', (group) => {
+            gIo.emit('group-updated', group)
+        })
     })
 }
 
