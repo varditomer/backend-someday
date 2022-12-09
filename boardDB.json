@@ -459,6 +459,223 @@
                     "person": [
                         {
                             "_id": "u102",
+                            "style": "background-image: url(src/assets/imgs/refael-avatar.png)",
+                            "initials": "RA",
+                            "fullname": "Refael Abramov",
+                            "pic": true
+                        },
+                        {
+                            "_id": "u103",
+                            "fullname": "Tomer Vardi",
+                            "imgUrl": "src/assets/imgs/tomer-avatar.png",
+                            "color": "rgb(55, 124, 80)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "tomervardi@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority": "asckj",
+                    "status": "sdc34",
+                    "date": 1669932000000.0
+                },
+                {
+                    "groupId": "Yha4d",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Support user auth",
+                    "_id": "dDgQ7",
+                    "person": [
+                        {
+                            "_id": "u102",
+                            "fullname": "Refael Abramov",
+                            "imgUrl": "src/assets/imgs/refael-avatar.png",
+                            "color": "rgb(236, 105, 192)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority": "efv9e",
+                    "status": "dfbyc",
+                    "date": 1666990800000.0
+                }
+            ],
+            "[object Object]": "style"
+        },
+        {
+            "_id": "zjyKO",
+            "title": "Backlog",
+            "boardId": "639077a55232d8771e735007",
+            "style": {
+                "color": "rgb(151,99,212)",
+                "light": "rgba(151,99,212,0.6)"
+            },
+            "tasks": [
+                {
+                    "_id": "Sxsbk",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "zjyKO",
+                    "title": "Present Our Someday App",
+                    "status": "qwdlk",
+                    "priority": "efv9e",
+                    "date": 1669672800000.0,
+                    "numbers": NumberInt(121212),
+                    "text": "Make a plan B",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(20),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(12),
+                            "year": NumberInt(2022)
+                        }
+                    },
+                    "comments": [
+                        {
+                            "_id": "sbr12",
+                            "taskId": "xwe45",
+                            "txt": "Good luck and have fun",
+                            "createdAt": 1590999817436.0,
+                            "byMember": {
+                                "_id": "u104",
+                                "fullname": "Ronen Boxer",
+                                "imgUrl": "src/assets/imgs/ronen-avatar.png"
+                            }
+                        },
+                        {
+                            "_id": "u103",
+                            "imgUrl": "src/assets/imgs/tomer-avatar.png",
+                            "fullname": "Tomer Vardi",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "src/assets/imgs/ronen-avatar.png",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority": "gbf0g",
+                    "status": "dfbyc",
+                    "date": 1668204000000.0,
+                    "text": "Don't forget sockets",
+                    "link": {
+                        "url": "https://atlascloud.network/",
+                        "title": "Atlas"
+                    }
+                },
+                {
+                    "_id": "TDqrs",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "zjyKO",
+                    "title": "Get familiar with features",
+                    "date": 1668808800000.0,
+                    "priority": "asckj",
+                    "status": "Default",
+                    "person": [
+                        {
+                            "_id": "u102",
+                            "fullname": "Refael Abramov",
+                            "imgUrl": "src/assets/imgs/refael-avatar.png"
+                        }
+                    ],
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2022)
+                        },
+                        {
+                            "_id": "ZeSzm",
+                            "taskId": "xwe45",
+                            "txt": "Amazing, already forked! 🍴",
+                            "createdAt": 1670230590647.0,
+                            "byMember": {
+                                "_id": "u103",
+                                "fullname": "Tomer Vardi",
+                                "imgUrl": "src/assets/imgs/tomer-avatar.png"
+                            },
+                            "likes": [
+                                "u102",
+                                "u104"
+                            ]
+                        }
+                    ],
+                    "status": "sdc34",
+                    "priority": "acmksd",
+                    "date": 1669413600000.0,
+                    "link": {
+                        "url": "https://github.com/varditomer/Someday",
+                        "title": "Someday Github"
+                    },
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(30),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(13),
+                            "year": NumberInt(2022)
+                        }
+                    }
+                },
+                {
+                    "_id": "3Exi3",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "zjyKO",
+                    "title": "Make the project ours",
+                    "status": "db03v",
+                    "priority": "gbf0g",
+                    "date": 1668981600000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(3),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(13),
+                            "year": NumberInt(2022)
+                        }
+                    },
+                    "person": [
+                        {
+                            "_id": "u103",
+                            "style": "background-image: url(src/assets/imgs/tomer-avatar.png)",
+                            "initials": "TV",
+                            "fullname": "Tomer Vardi",
+                            "pic": true
+                        },
+                        {
+                            "_id": "u102",
+                            "style": "background-image: url(src/assets/imgs/refael-avatar.png)",
+                            "initials": "RA",
+                            "fullname": "Refael Abramov",
+                            "pic": true
+                        }
+                    ]
+                },
+                {
+                    "groupId": "zjyKO",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Build some backend",
+                    "_id": "AeYyT",
+                    "person": [
+                        {
+                            "_id": "u102",
                             "imgUrl": "src/assets/imgs/refael-avatar.png",
                             "fullname": "Refael Abramov",
                             "pic": true,
@@ -502,7 +719,7 @@
                     "title": "Get familiar with features",
                     "date": 1668808800000.0,
                     "priority": "asckj",
-                    "status": "Default",
+                    "status": "qwdlk",
                     "person": [
                         {
                             "_id": "u102",
