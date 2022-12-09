@@ -58,7 +58,7 @@ async function update(group, isFifo = true) {
 }
 
 async function duplicate(groupId, boardId) {
-    const group = await query(groupId, boardid)
+    const group = await query(groupId, boardId)
     const duplicatedGroup = JSON.parse(JSON.stringify(group))
     duplicatedGroup._id = null
     duplicatedGroup.tasks.forEach(task => {
