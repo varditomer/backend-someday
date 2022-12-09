@@ -90,11 +90,7 @@
                     "groupId": "zjyKO",
                     "boardId": "639077a55232d8771e735007",
                     "title": "Create all base files",
-<<<<<<< HEAD
                     "status": "sdc34",
-=======
-                    "status": "Unattained",
->>>>>>> 6ae58ac9b8d7a34f296f2a128ca59d614d7af552
                     "date": 1668463200000.0,
                     "comments": [],
                     "_id": "jpMFf",
@@ -171,11 +167,7 @@
                     "boardId": "639077a55232d8771e735007",
                     "groupId": "zjyKO",
                     "title": "Make the project ours",
-<<<<<<< HEAD
                     "status": "sdc34",
-=======
-                    "status": "Stuck",
->>>>>>> 6ae58ac9b8d7a34f296f2a128ca59d614d7af552
                     "priority": "gbf0g",
                     "date": 1668981600000.0,
                     "timeline": {
