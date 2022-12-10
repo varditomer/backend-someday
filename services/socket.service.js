@@ -8,7 +8,6 @@ function setupSocketAPI(http) {
             origin: '*',
         }
     })
-    console.log(gIo);
     gIo.on('connection', socket => {
         logger.info(`New connected socket [id: ${socket.id}]`)
 
@@ -45,7 +44,7 @@ function setupSocketAPI(http) {
             broadcast(res)
         })
         socket.on('save-board', (boardData) => {
-            const res = { type: 'group-removed', boardData, userId: '0' }
+            const res = { type: 'board-saved', boardData, userId: '0' }
             broadcast(res)
         })
         socket.on('add-board', (boardData) => {
