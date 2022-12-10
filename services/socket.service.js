@@ -29,29 +29,36 @@ function setupSocketAPI(http) {
             delete socket.userId
         })
         socket.on('save-task', (savedTask) => {
-            gIo.emit('task-saved', savedTask)
+            const res = { type: 'task-saved', savedTask, userId: '0' }
+            broadcast(res)
         })
         socket.on('remove-task', (removedTask) => {
-            gIo.emit('task-removed', removedTask)
+            const res = { type: 'task-removed', removedTask, userId: '0' }
+            broadcast(res)
         })
         socket.on('duplicate-tasks', (tasksToDuplicate) => {
-            gIo.emit('tasks-duplicated', tasksToDuplicate)
+            const res = { type: 'tasks-duplicated', tasksToDuplicate, userId: '0' }
+            broadcast(res)
         })
         socket.on('remove-group', (group) => {
-            gIo.emit('group-removed', group)
+            const res = { type: 'group-removed', group, userId: '0' }
+            broadcast(res)
         })
         socket.on('save-board', (boardData) => {
-            gIo.emit('board-saved', boardData)
+            const res = { type: 'group-removed', boardData, userId: '0' }
+            broadcast(res)
         })
         socket.on('add-board', (boardData) => {
-            gIo.emit('board-added', boardData)
+            const res = { type: 'board-added', boardData, userId: '0' }
+            broadcast(res)
         })
         socket.on('save-group', (data) => {
             const res = { type: 'group-saved', data, userId: '0' }
             broadcast(res)
         })
         socket.on('update-group', (group) => {
-            gIo.emit('group-updated', group)
+            const res = { type: 'group-updated', group, userId: '0' }
+            broadcast(res)
         })
     })
 }
