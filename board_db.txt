@@ -1,0 +1,1102 @@
+{
+    "_id" : ObjectId("639077a55232d8771e735007"),
+    "title" : "Flow",
+    "isStarred" : true,
+    "createdBy" : {
+        "_id" : "u102",
+        "fullname" : "Refael Abramov",
+        "imgUrl" : "src/assets/imgs/refael-avatar.png"
+    },
+    "members" : [
+        {
+            "_id" : "u102",
+            "fullname" : "Refael Abramov",
+            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+        },
+        {
+            "_id" : "u103",
+            "fullname" : "Tomer Vardi",
+            "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+        },
+        {
+            "_id" : "u104",
+            "fullname" : "Ronen Boxer",
+            "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+        }
+    ],
+    "groups" : [
+        {
+            "_id" : "Yha4d",
+            "title" : "dfbycsdcsdc\n\n",
+            "boardId" : "639077a55232d8771e735007",
+            "style" : {
+                "color" : "#fdab3d",
+                "light" : "#fdab3d99"
+            },
+            "tasks" : [
+                {
+                    "groupId" : "Yha4d",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Support adding files",
+                    "_id" : "3JB9B",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "style" : "background-image: url(src/assets/imgs/refael-avatar.png)",
+                            "initials" : "RA",
+                            "fullname" : "Refael Abramov",
+                            "pic" : true
+                        },
+                        {
+                            "_id" : "u103",
+                            "fullname" : "Tomer Vardi",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                            "color" : "rgb(55, 124, 80)",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "tomervardi@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority" : "asckj",
+                    "status" : "sdc34",
+                    "date" : 1669932000000.0
+                },
+                {
+                    "_id" : "7teZJ",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "Yha4d",
+                    "title" : "Build flow",
+                    "date" : 1670277600000.0,
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(9),
+                            "day" : NumberInt(30),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(13),
+                            "year" : NumberInt(2022)
+                        }
+                    },
+                    "priority" : "gbf0g",
+                    "status" : "dfbyc",
+                    "person" : [
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                            "contact" : {
+                                "mail" : "ronenboxer@gmail.com"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "_id" : "ldnow",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "Yha4d",
+                    "title" : "Create Features",
+                    "text" : "D&D, Kanban, Perfect-pixel",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
+                            "fullname" : "Refael Abramov",
+                            "pic" : true,
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u103",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                            "fullname" : "Tomer Vardi",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "ronenboxer@gmail.com"
+                            }
+                        }
+                    ],
+                    "status" : "34f9e",
+                    "date" : 1670709600000.0,
+                    "priority" : "gbf0g",
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(10),
+                            "day" : NumberInt(12),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(30),
+                            "year" : NumberInt(2022)
+                        }
+                    }
+                },
+                {
+                    "_id" : "KT5Eo",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "Yha4d",
+                    "title" : "Build demo data",
+                    "date" : 1670450400000.0,
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(5),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(0),
+                            "day" : NumberInt(11),
+                            "year" : NumberInt(2022)
+                        }
+                    },
+                    "priority" : "efv9e",
+                    "status" : "qwdlk",
+                    "comments" : [
+                        {
+                            "_id" : "ZyPnm",
+                            "taskId" : "adc8w",
+                            "txt" : "@Tomer Vardi where is my coffee?",
+                            "createdAt" : 1590999817436.0,
+                            "byMember" : {
+                                "_id" : "u104",
+                                "fullname" : "Ronen Boxer",
+                                "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                            }
+                        },
+                        {
+                            "_id" : "ZqPnm",
+                            "taskId" : "adm8w",
+                            "txt" : "@Ronen Boxer in a minute ☕",
+                            "attachment" : "https://sprint-4-company.monday.com/protected_static/14268178/resources/683016563/big-JPEG_29112022_163653_2246356385772545662.jpg",
+                            "createdAt" : 1590999817436.0,
+                            "byMember" : {
+                                "_id" : "u103",
+                                "fullname" : "Tomer Vardi",
+                                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            },
+                            "likes" : [
+                                "u104",
+                                "0"
+                            ]
+                        }
+                    ],
+                    "person" : [
+                        {
+                            "_id" : "u103",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                            "fullname" : "Tomer Vardi",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "ronenboxer@gmail.com"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "groupId" : "Yha4d",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Support user auth",
+                    "_id" : "dDgQ7",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "fullname" : "Refael Abramov",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
+                            "color" : "rgb(236, 105, 192)",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority" : "efv9e",
+                    "status" : "dfbyc",
+                    "date" : 1666990800000.0
+                }
+            ],
+            "[object Object]" : "style"
+        },
+        {
+            "_id" : "zjyKO",
+            "title" : "Backlog",
+            "boardId" : "639077a55232d8771e735007",
+            "style" : {
+                "color" : "rgb(151,99,212)",
+                "light" : "rgba(151,99,212,0.6)"
+            },
+            "tasks" : [
+                {
+                    "_id" : "HCQxe",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "zjyKO",
+                    "title" : "Upload project to Github",
+                    "text" : "Set github pages",
+                    "person" : [
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                        }
+                    ],
+                    "comments" : [
+                        {
+                            "_id" : "Zelzm",
+                            "taskId" : "xwe45",
+                            "txt" : "Thanks, great job as always :-)",
+                            "createdAt" : 1670144190647.0,
+                            "byMember" : {
+                                "_id" : "u103",
+                                "fullname" : "Tomer Vardi",
+                                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            }
+                        },
+                        {
+                            "_id" : "ZeSzm",
+                            "taskId" : "xwe45",
+                            "txt" : "Amazing, already forked! 🍴",
+                            "createdAt" : 1670230590647.0,
+                            "byMember" : {
+                                "_id" : "u103",
+                                "fullname" : "Tomer Vardi",
+                                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            },
+                            "likes" : [
+                                "u102",
+                                "u104"
+                            ]
+                        }
+                    ],
+                    "status" : "sdc34",
+                    "priority" : "acmksd",
+                    "date" : 1669413600000.0,
+                    "link" : {
+                        "url" : "https://github.com/varditomer/Someday",
+                        "title" : "Someday Github"
+                    },
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(10),
+                            "day" : NumberInt(30),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(13),
+                            "year" : NumberInt(2022)
+                        }
+                    }
+                },
+                {
+                    "_id" : "Sxsbk",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "zjyKO",
+                    "title" : "Present Our Someday App",
+                    "status" : "dfbyc",
+                    "priority" : "efv9e",
+                    "date" : 1669672800000.0,
+                    "numbers" : NumberInt(1212),
+                    "text" : "Make a plan B",
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(10),
+                            "day" : NumberInt(20),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(12),
+                            "year" : NumberInt(2022)
+                        }
+                    },
+                    "comments" : [
+                        {
+                            "_id" : "sbr12",
+                            "taskId" : "xwe45",
+                            "txt" : "Good luck and have fun",
+                            "createdAt" : 1590999817436.0,
+                            "byMember" : {
+                                "_id" : "u104",
+                                "fullname" : "Ronen Boxer",
+                                "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                            }
+                        },
+                        {
+                            "_id" : "ZePnm",
+                            "taskId" : "xwe45",
+                            "txt" : "Good luck 😎",
+                            "createdAt" : 1590999817436.0,
+                            "byMember" : {
+                                "_id" : "u103",
+                                "fullname" : "Tomer Vardi",
+                                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            }
+                        }
+                    ],
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "fullname" : "Refael Abramov",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+                        },
+                        {
+                            "_id" : "u103",
+                            "fullname" : "Tomer Vardi",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                        },
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                        }
+                    ],
+                    "link" : {
+                        "url" : "https://sprint-4-company.monday.com/boards/3590839107/pulses/3590900012",
+                        "title" : "Original Monday"
+                    }
+                },
+                {
+                    "_id" : "3Exi3",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "zjyKO",
+                    "title" : "Make the project ours",
+                    "status" : "db03v",
+                    "priority" : "gbf0g",
+                    "date" : 1668981600000.0,
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(3),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(13),
+                            "year" : NumberInt(2022)
+                        }
+                    },
+                    "person" : [
+                        {
+                            "_id" : "u103",
+                            "style" : "background-image: url(src/assets/imgs/tomer-avatar.png)",
+                            "initials" : "TV",
+                            "fullname" : "Tomer Vardi",
+                            "pic" : true
+                        },
+                        {
+                            "_id" : "u102",
+                            "style" : "background-image: url(src/assets/imgs/refael-avatar.png)",
+                            "initials" : "RA",
+                            "fullname" : "Refael Abramov",
+                            "pic" : true
+                        }
+                    ]
+                },
+                {
+                    "groupId" : "zjyKO",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Create all base files",
+                    "status" : "34f9e",
+                    "date" : 1668463200000.0,
+                    "comments" : [
+
+                    ],
+                    "_id" : "jpMFf",
+                    "priority" : "acmksd",
+                    "numbers" : NumberInt(55),
+                    "person" : [
+                        {
+                            "_id" : "u104",
+                            "style" : "background-image: url(src/assets/imgs/ronen-avatar.png)",
+                            "initials" : "RB",
+                            "fullname" : "Ronen Boxer",
+                            "pic" : true
+                        },
+                        {
+                            "_id" : "u102",
+                            "style" : "background-image: url(src/assets/imgs/refael-avatar.png)",
+                            "initials" : "RA",
+                            "fullname" : "Refael Abramov",
+                            "pic" : true
+                        },
+                        {
+                            "_id" : "u103",
+                            "fullname" : "Tomer Vardi",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                            "color" : "rgb(55, 124, 80)",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "tomervardi@gmail.com"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "groupId" : "zjyKO",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Build some backend",
+                    "_id" : "AeYyT",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
+                            "fullname" : "Refael Abramov",
+                            "pic" : true,
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u103",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                            "fullname" : "Tomer Vardi",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "ronenboxer@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority" : "gbf0g",
+                    "status" : "dfbyc",
+                    "date" : 1668204000000.0,
+                    "text" : "Don't forget sockets",
+                    "link" : {
+                        "url" : "https://atlascloud.network/",
+                        "title" : "Atlas"
+                    }
+                },
+                {
+                    "_id" : "TDqrs",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "zjyKO",
+                    "title" : "Get familiar with features",
+                    "date" : 1668808800000.0,
+                    "priority" : "asckj",
+                    "status" : "dfbyc",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "fullname" : "Refael Abramov",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+                        }
+                    ],
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(1),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(1),
+                            "day" : NumberInt(1),
+                            "year" : NumberInt(2023)
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "_id" : "aRWLB",
+            "boardId" : "639077a55232d8771e735007",
+            "title" : "sdc34",
+            "createdAt" : NumberInt(234850123),
+            "style" : {
+                "color" : "#ba3254",
+                "light" : "#ba325499"
+            },
+            "byMember" : {
+                "_id" : "u104",
+                "fullname" : "Ronen Boxer",
+                "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+            },
+            "tasks" : [
+                {
+                    "_id" : "eSHic",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "aRWLB",
+                    "title" : "First team meeting",
+                    "date" : 1666818000000.0,
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(29),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(29),
+                            "year" : NumberInt(2022)
+                        }
+                    },
+                    "priority" : "asckj",
+                    "status" : "sdc34",
+                    "person" : [
+                        {
+                            "_id" : "u103",
+                            "fullname" : "Tomer Vardi",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                        },
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                        },
+                        {
+                            "_id" : "u102",
+                            "fullname" : "Refael Abramov",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+                        }
+                    ],
+                    "comments" : [
+                        {
+                            "_id" : "Zeesm",
+                            "taskId" : "xwe45",
+                            "txt" : "Yeah 🎈🎉🎊",
+                            "createdAt" : 1590999817436.0,
+                            "byMember" : {
+                                "_id" : "0",
+                                "fullname" : "Guest",
+                                "imgUrl" : "src/assets/imgs/default-avatar.svg"
+                            },
+                            "likes" : [
+                                "u102",
+                                "u103"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "groupId" : "aRWLB",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Setting up workspace",
+                    "_id" : "AK12g",
+                    "person" : [
+                        {
+                            "_id" : "u103",
+                            "fullname" : "Tomer Vardi",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                            "color" : "rgb(55, 124, 80)",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "tomervardi@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority" : "gbf0g",
+                    "status" : "dfbyc",
+                    "date" : 1666472400000.0
+                },
+                {
+                    "groupId" : "aRWLB",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Opening monday for tasks",
+                    "_id" : "Ndn3v",
+                    "person" : [
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                            "color" : "rgb(238, 109, 64)",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "ronenboxer@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority" : "acmksd",
+                    "status" : "sdc34",
+                    "date" : 1666386000000.0
+                },
+                {
+                    "groupId" : "aRWLB",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Download assets",
+                    "_id" : "WyWTX",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "fullname" : "Refael Abramov",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
+                            "color" : "rgb(236, 105, 192)",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        }
+                    ],
+                    "status" : "34f9e",
+                    "priority" : "efv9e",
+                    "date" : 1666126800000.0,
+                    "text" : "Files uploaded"
+                }
+            ]
+        },
+        {
+            "_id" : "itpQb",
+            "boardId" : "639077a55232d8771e735007",
+            "title" : "Near future tasks",
+            "style" : {
+                "color" : "#794bd1",
+                "light" : "#794bd199"
+            },
+            "tasks" : [
+                {
+                    "_id" : "SmxoM",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "itpQb",
+                    "title" : "Meet up with team leader",
+                    "date" : 1672092000000.0,
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(10),
+                            "day" : NumberInt(1),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(17),
+                            "year" : NumberInt(2022)
+                        }
+                    },
+                    "status" : "qwdlk",
+                    "priority" : "acmksd",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "fullname" : "Refael Abramov",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+                        }
+                    ]
+                },
+                {
+                    "_id" : "ukbH6",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "itpQb",
+                    "title" : "Come up with design ideas",
+                    "date" : 1671919200000.0,
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(3),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(0),
+                            "day" : NumberInt(19),
+                            "year" : NumberInt(2023)
+                        }
+                    },
+                    "status" : "dfbyc",
+                    "priority" : "efv9e",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
+                            "fullname" : "Refael Abramov",
+                            "pic" : true,
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u103",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                            "fullname" : "Tomer Vardi",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "_id" : "RXSHZ",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "itpQb",
+                    "title" : "Think about app architecture",
+                    "date" : 1671487200000.0,
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(10),
+                            "day" : NumberInt(30),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(3),
+                            "year" : NumberInt(2022)
+                        }
+                    },
+                    "status" : "34f9e",
+                    "priority" : "gbf0g",
+                    "person" : [
+
+                    ]
+                },
+                {
+                    "groupId" : "itpQb",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Get together and have some coffee",
+                    "_id" : "YNNd2",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
+                            "fullname" : "Refael Abramov",
+                            "pic" : true,
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u103",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                            "fullname" : "Tomer Vardi",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "ronenboxer@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority" : "asckj",
+                    "status" : "sdc34",
+                    "date" : 1670796000000.0
+                },
+                {
+                    "groupId" : "itpQb",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Finish all preparations",
+                    "_id" : "vBf55",
+                    "person" : [
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                            "color" : "rgb(238, 109, 64)",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "ronenboxer@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority" : "efv9e",
+                    "status" : "dfbyc"
+                }
+            ]
+        },
+        {
+            "_id" : "byhG8",
+            "boardId" : "639077a55232d8771e735007",
+            "title" : "Bugs",
+            "createdAt" : 238392842234.0,
+            "style" : {
+                "color" : "#4fccc6",
+                "light" : "#4fccc699"
+            },
+            "byMember" : {
+                "_id" : "u103",
+                "fullname" : "Tomer Vardi",
+                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+            },
+            "tasks" : [
+                {
+                    "_id" : "2ZAXv",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "byhG8",
+                    "title" : "Modal covered when hovering rows",
+                    "date" : 1670230590647.0,
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(10),
+                            "day" : NumberInt(30),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(3),
+                            "year" : NumberInt(2022)
+                        }
+                    },
+                    "status" : "sdc34",
+                    "priority" : "efv9e",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
+                            "fullname" : "Refael Abramov",
+                            "pic" : true,
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "ronenboxer@gmail.com"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "_id" : "ARdtO",
+                    "boardId" : "639077a55232d8771e735007",
+                    "groupId" : "byhG8",
+                    "title" : "Upload img stuck",
+                    "date" : 1670388990647.0,
+                    "timeline" : {
+                        "start" : {
+                            "month" : NumberInt(10),
+                            "day" : NumberInt(30),
+                            "year" : NumberInt(2022)
+                        },
+                        "end" : {
+                            "month" : NumberInt(11),
+                            "day" : NumberInt(3),
+                            "year" : NumberInt(2022)
+                        }
+                    },
+                    "status" : "dfbyc",
+                    "priority" : "asckj",
+                    "person" : [
+                        {
+                            "_id" : "u103",
+                            "fullname" : "Tomer Vardi",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                        }
+                    ],
+                    "comments" : [
+                        {
+                            "_id" : "Zeesm",
+                            "taskId" : "dzwq34",
+                            "txt" : "I think it happens with large photos",
+                            "createdAt" : 1670316990647.0,
+                            "byMember" : {
+                                "_id" : "0",
+                                "fullname" : "Guest",
+                                "imgUrl" : "src/assets/imgs/default-avatar.svg"
+                            },
+                            "likes" : [
+                                "u102",
+                                "u103",
+                                "u104"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "groupId" : "byhG8",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Fix reactivity",
+                    "_id" : "X4NLV",
+                    "person" : [
+                        {
+                            "_id" : "u104",
+                            "fullname" : "Ronen Boxer",
+                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                            "color" : "rgb(238, 109, 64)",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "ronenboxer@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority" : "acmksd",
+                    "status" : "34f9e",
+                    "date" : 1670796000000.0
+                },
+                {
+                    "groupId" : "byhG8",
+                    "boardId" : "639077a55232d8771e735007",
+                    "title" : "Filtering by persons",
+                    "_id" : "Hq1kC",
+                    "person" : [
+                        {
+                            "_id" : "u102",
+                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
+                            "fullname" : "Refael Abramov",
+                            "pic" : true,
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id" : "u103",
+                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                            "fullname" : "Tomer Vardi",
+                            "isAdmin" : true,
+                            "contact" : {
+                                "mail" : "refaelavramov@gmail.com"
+                            }
+                        }
+                    ],
+                    "priority" : "gbf0g",
+                    "status" : "db03v",
+                    "date" : 1670882400000.0
+                }
+            ]
+        }
+    ],
+    "activities" : [
+        {
+            "_id" : "a101",
+            "txt" : "Changed Color",
+            "createdAt" : NumberInt(154514),
+            "byMember" : {
+                "_id" : "u102",
+                "fullname" : "Refael Abramov",
+                "imgUrl" : "src/assets/imgs/refael-avatar.png"
+            },
+            "tasks" : [
+                {
+                    "_id" : "c101",
+                    "title" : "Replace Logo"
+                }
+            ]
+        }
+    ],
+    "cmpsOrder" : [
+        "status",
+        "priority",
+        "date",
+        "person",
+        "timeline",
+        "text",
+        "numbers",
+        "link"
+    ],
+    "kanbanOrder" : {
+        "status" : [
+            "34f9e",
+            "dfbyc",
+            "sdc34",
+            "qwdlk",
+            "db03v"
+        ],
+        "priority" : [
+            "gbf0g",
+            "asckj",
+            "efv9e",
+            "acmksd"
+        ],
+        "date" : [
+            1670709600000.0,
+            1670277600000.0,
+            1669932000000.0,
+            1670450400000.0,
+            1666990800000.0,
+            1669413600000.0,
+            1668463200000.0,
+            1669672800000.0,
+            1668981600000.0,
+            1668204000000.0,
+            1668808800000.0,
+            1666818000000.0,
+            1666472400000.0,
+            1666386000000.0,
+            1666126800000.0,
+            1672092000000.0,
+            1671919200000.0,
+            1671487200000.0,
+            1670796000000.0,
+            1670230590647.0,
+            1670388990647.0,
+            1670882400000.0
+        ],
+        "text" : [
+            "D&D, Kanban, Perfect-pixel",
+            "ngvjhvjh",
+            "Set github pages",
+            "Make a plan B",
+            "Don't forget sockets",
+            "Files uploaded"
+        ],
+        "numbers" : [
+            NumberInt(23423),
+            NumberInt(200),
+            NumberInt(435345),
+            NumberInt(55),
+            NumberInt(121212)
+        ],
+        "person" : [
+            {
+                "_id" : "u102",
+                "fullname" : "Refael Abramov",
+                "imgUrl" : "src/assets/imgs/refael-avatar.png",
+                "color" : "rgb(236, 105, 192)",
+                "isAdmin" : true,
+                "contact" : {
+                    "mail" : "refaelavramov@gmail.com"
+                }
+            },
+            {
+                "_id" : "u103",
+                "fullname" : "Tomer Vardi",
+                "imgUrl" : "src/assets/imgs/tomer-avatar.png",
+                "color" : "rgb(55, 124, 80)",
+                "isAdmin" : true,
+                "contact" : {
+                    "mail" : "tomervardi@gmail.com"
+                }
+            },
+            {
+                "_id" : "u104",
+                "fullname" : "Ronen Boxer",
+                "imgUrl" : "src/assets/imgs/ronen-avatar.png",
+                "color" : "rgb(238, 109, 64)",
+                "isAdmin" : true,
+                "contact" : {
+                    "mail" : "ronenboxer@gmail.com"
+                }
+            }
+        ]
+    },
+    "kanbanType" : "status"
+}
