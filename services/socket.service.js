@@ -91,7 +91,7 @@ async function broadcast({ type, data, userId }) {
 
 async function _getUserSocket(userId) {
     const sockets = await _getAllSockets()
-    const socket = sockets.find(s => s.id === userId)
+    const socket = sockets.find(s => s.userId === userId)
     return socket
 }
 async function _getAllSockets() {
