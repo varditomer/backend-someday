@@ -12,7 +12,7 @@ router.get('/:id', query)
 router.post('/', add)
 router.put('/:id', update)
 router.delete('/:id', remove)
-router.delete('/:id', removeTasks)
+router.delete('/', removeTasks)
 
 // router.post('/:id/msg', requireAuth, addCarMsg)
 // router.delete('/:id/msg/:msgId', requireAuth, removeCarMsg)

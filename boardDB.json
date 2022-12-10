@@ -256,7 +256,7 @@
                     "status" : "Default",
                     "priority" : "efv9e",
                     "date" : 1669672800000.0,
-                    "numbers" : NumberInt(121212),
+                    "numbers" : NumberInt(1212),
                     "text" : "Make a plan B",
                     "timeline" : {
                         "start" : {
@@ -1015,7 +1015,7 @@
     "statusOrder" : [
         {
             "_id" : "sdc34",
-            "title" : "Done\n\n",
+            "title" : "Done",
             "value" : "#03c875"
         },
         {
