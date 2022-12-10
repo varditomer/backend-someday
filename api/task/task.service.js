@@ -6,6 +6,7 @@ const boardService = require('../board/board.service')
 async function add(task, isFifo, isDuplicate) {
     task._id = utilService.makeId()
     const group = await groupService.query(task.groupId, task.boardId)
+    console.log(group);
     isFifo
         ? group.tasks.push(isDuplicate ? _replaceTaskEntitiesIds(task) : task)
         : group.tasks.unshift(isDuplicate ? _replaceTaskEntitiesIds(task) : task)
@@ -48,13 +49,13 @@ async function remove(task) {
 
 
 async function addMany(tasks, tasksCopy, boardId) {
-    const data = await boardService.query({ id: boardId })
+    const data = await boardService.query(boardId)
     const { board } = data
     const boardCopy = JSON.parse(JSON.stringify(board))
     boardCopy.groups.forEach((group, groupIdx) => {
         tasks.forEach((task, taskIdx) => {
             if (group.tasks.find(anyTask => anyTask._id === task._id)) {
-                
+
                 board.groups[groupIdx].tasks.push(tasksCopy[taskIdx])
             }
         })

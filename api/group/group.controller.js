@@ -5,7 +5,6 @@ const logger = require('../../services/logger.service')
 async function add(req, res) {
   // const {loggedinUser} = req
   try {
-    // group.owner = loggedinUser
     const { group, isFifo } = req.body
     await groupService.add(group, isFifo)
     res.json(group)
@@ -31,8 +30,6 @@ async function update(req, res) {
 async function remove(req, res) {
   try {
     const { groupId, boardId } = req.body
-    // console.log('this is body');
-    // console.log(req.body);
     await groupService.remove(groupId, boardId)
     res.send(groupId)
   } catch (err) {

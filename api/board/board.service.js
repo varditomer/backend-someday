@@ -3,21 +3,20 @@ const logger = require('../../services/logger.service')
 const utilService = require('../../services/util.service')
 const ObjectId = require('mongodb').ObjectId
 
-async function query(filterBy = {}) {
+async function query(id) {
     try {
         let board
         const collection = await dbService.getCollection('board')
-        if (filterBy.id) board = await collection.findOne({ _id: ObjectId(filterBy.id) })
+        if (id) board = await collection.findOne({ _id: ObjectId(id) })
         else board = (await collection.find().toArray())[0]
-        if (filterBy.groupTitles || filterBy.tasks) board = await _multiFilter(filterBy, board)
-        else {
-            if (filterBy.userId) board = _filterByPerson(board, filterBy.userId)
-            if (filterBy.txt) board = _filterByTxt(board, filterBy.txt)
-        }
+        const dataMap = _getDataMap(board)
+        const miniBoards = await _getMiniBoards()
+        const stats = _getBoardStats(board, dataMap.tasks)
         const res = {
             board,
-            miniBoards: await _getMiniBoards(board),
-            dataMap: await _getDataMap(board)
+            miniBoards,
+            dataMap,
+            stats
         }
         return res
     } catch (err) {
@@ -43,7 +42,15 @@ async function add(board) {
         newBoard = newBoard.ops[0]
         newBoard = _connectIds(newBoard)
         await update(newBoard)
-        return { board: newBoard, miniBoards: _getMiniBoards(), dataMap: _getDataMap(newBoard) }
+        const dataMap = _getDataMap(board)
+        const miniBoards = await _getMiniBoards()
+        const stats = _getBoardStats(board, dataMap.tasks)
+        return {
+            board,
+            miniBoards,
+            dataMap,
+            stats
+        }
     } catch (err) {
         logger.error('cannot insert board', err)
         throw err
@@ -56,6 +63,15 @@ async function update(board) {
         const boardCopy = JSON.parse(JSON.stringify(board))
         delete boardCopy._id
         await collection.updateOne({ _id: ObjectId(board._id) }, { $set: boardCopy })
+        const dataMap = _getDataMap(board)
+        const miniBoards = await _getMiniBoards()
+        const stats = _getBoardStats(board, dataMap.tasks)
+        return {
+            board,
+            miniBoards,
+            dataMap,
+            stats
+        }
     } catch (err) {
         logger.error(`cannot update board ${board._id}`, err)
         throw err
@@ -64,7 +80,7 @@ async function update(board) {
 
 async function removeManyTasks(taskIds, boardId) {
     if (!taskIds?.length || !boardId) return
-    const data = await query({ id: boardId })
+    const data = await query(boardId)
     if (!data) return Promise.reject('Cannot find board')
     const { board } = data
     board.groups = board.groups.map(group => {
@@ -75,12 +91,20 @@ async function removeManyTasks(taskIds, boardId) {
         return group
     })
     await update(board)
-    return board
+    const dataMap = _getDataMap(board)
+    const miniBoards = await _getMiniBoards()
+    const stats = _getBoardStats(board, dataMap.tasks)
+    return {
+        board,
+        miniBoards,
+        dataMap,
+        stats
+    }
 }
 
 
 
-async function _getDataMap(board) {
+function _getDataMap(board) {
     const personFilter = [
         {
             _id: "u102",
@@ -125,7 +149,7 @@ async function _getDataMap(board) {
         if (!groupTitle.includes(group.title)) groupTitle.push(group.title)
         group.tasks.forEach(task => {
             for (let prop in taskFilter) {
-                if (!taskFilter[prop].includes(task[prop])) taskFilter[prop].push(task[prop])
+                if (task[prop] && !taskFilter[prop].includes(task[prop])) taskFilter[prop].push(task[prop])
             }
         })
     })
@@ -142,66 +166,25 @@ async function _getMiniBoards() {
     return boards
 }
 
-
-function _filterByPerson(board, id) {
-    if (!id) return board
-    board.groups = board.groups.filter(group => {
-        if (!group.tasks || !group.tasks.length) return false
-        group.tasks = group.tasks.filter(task => {
-            return task?.person?.some(person => person._id === id)
+function _getBoardStats(board, taskDataMap) {
+    const valCountMap = {}
+    const taskCount = board.groups.reduce((taskCounter, group) => {
+        if (!valCountMap[group.title]) valCountMap[group.title] = 0
+        valCountMap[group.title]++
+        taskCounter += group.tasks.length
+        group.tasks.forEach(task => {
+            for (const key in taskDataMap) {
+                const value = task[key]
+                if (value && taskDataMap[key].includes(value)) {
+                    if (!valCountMap[value]) valCountMap[value] = 0
+                    valCountMap[value]++
+                }
+            }
         })
-        return (group.tasks && group.tasks.length)
-    })
-    return board
+        return taskCounter
+    }, 0)
+    return { valCountMap, taskCount }
 }
-
-function _filterByTxt(board, txt) {
-    if (!txt) return board
-    const regex = new RegExp(txt, 'ig')
-    board.groups = board.groups.reduce((groupArr, group) => {
-        const isGroupTitleMatch = regex.test(group.title)
-        if (isGroupTitleMatch) {
-            group.title = group.title.replaceAll(regex, match => `<span class="highlight">${match}</span>`)
-        }
-
-        group.tasks = group.tasks.reduce((taskArr, task) => {
-            if (regex.test(task.title)) {
-                task.title = task.title.replaceAll(regex, match => `<span class="highlight">${match}</span>`)
-                taskArr.push(task)
-            }
-            return taskArr
-        }, [])
-
-        if (group.tasks?.length || isGroupTitleMatch) groupArr.push(group)
-        return groupArr
-
-    }, [])
-    return board
-}
-
-async function _multiFilter(filterBy, board) {
-    board.groups = board.groups.reduce((filteredGroups, group) => {
-        if (filterBy?.groupTitle && filterBy.groupTitle !== group.title) return filteredGroups
-        if (filterBy.tasks) group.tasks = group.tasks.reduce((filteredTasks, task) => {
-            const taskFilter = JSON.parse(JSON.stringify(filterBy.tasks))
-            if (taskFilter.person?.length &&
-                !taskFilter.person.every(id => {
-                    return (task.person && task.person.find(person => person._id === id))
-                })) return filteredTasks
-            delete taskFilter.person
-            for (let prop in taskFilter) {
-                if (task[prop] !== taskFilter[prop]) return filteredTasks
-            }
-            filteredTasks.push(task)
-            return filteredTasks
-        }, [])
-        if (group.tasks.length) filteredGroups.push(group)
-        return filteredGroups
-    }, [])
-    return board
-}
-
-
 
 function _connectIds(board) {
     board.groups.forEach(group => {

@@ -4,14 +4,8 @@ const logger = require('../../services/logger.service')
 async function query(req, res) {
   try {
     // const parsedFilter = JSON.parse(req.query.filterBy)
-    let filterBy = {
-      id: req.query.id || '',
-      txt: req.query.txt || '',
-      userId: req.query.userId || '',
-      groupTitles: req.query.groupTitles || '',
-      tasks: req.query.tasks || '',
-    }
-    const data = await boardService.query(filterBy)
+    const id  = req.params?.id || ''
+    const data = await boardService.query(id)
     res.send(data)
   } catch (err) {
     logger.error('Failed to get boards', err)
@@ -38,7 +32,7 @@ async function update(req, res) {
   try {
     const board = req.body
     const data = await boardService.update(board)
-    res.json(board)
+    res.json(data)
   } catch (err) {
     logger.error('Failed to update board', err)
     res.status(500).send({ err: 'Failed to update board' })
@@ -60,8 +54,8 @@ async function remove(req, res) {
 async function removeTasks(req, res) {
   try {
     const { boardId, taskIds } = req.body
-    const board = await boardService.removeManyTasks(taskIds, boardId)
-    res.send(board)
+    const boardData = await boardService.removeManyTasks(taskIds, boardId)
+    res.send(boardData)
   } catch (err) {
     logger.error('Failed to remove board', err)
     res.status(500).send({ err: 'Failed to remove board' })
