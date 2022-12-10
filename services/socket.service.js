@@ -10,6 +10,7 @@ function setupSocketAPI(http) {
     })
     gIo.on('connection', socket => {
         logger.info(`New connected socket [id: ${socket.id}]`)
+
         socket.on('disconnect', socket => {
             logger.info(`Socket disconnected [id: ${socket.id}]`)
         })
@@ -27,28 +28,36 @@ function setupSocketAPI(http) {
             delete socket.userId
         })
         socket.on('save-task', (savedTask) => {
-            gIo.emit('task-saved', savedTask)
+            const res = { type: 'task-saved', savedTask, userId: '0' }
+            broadcast(res)
         })
         socket.on('remove-task', (removedTask) => {
-            gIo.emit('task-removed', removedTask)
+            const res = { type: 'task-removed', removedTask, userId: '0' }
+            broadcast(res)
         })
         socket.on('duplicate-tasks', (tasksToDuplicate) => {
-            gIo.emit('tasks-duplicated', tasksToDuplicate)
+            const res = { type: 'tasks-duplicated', tasksToDuplicate, userId: '0' }
+            broadcast(res)
         })
         socket.on('remove-group', (group) => {
-            gIo.emit('group-removed', group)
+            const res = { type: 'group-removed', group, userId: '0' }
+            broadcast(res)
         })
         socket.on('save-board', (boardData) => {
-            gIo.emit('board-saved', boardData)
+            const res = { type: 'board-saved', boardData, userId: '0' }
+            broadcast(res)
         })
         socket.on('add-board', (boardData) => {
-            gIo.emit('board-added', boardData)
+            const res = { type: 'board-added', boardData, userId: '0' }
+            broadcast(res)
         })
         socket.on('save-group', (data) => {
-            gIo.emit('group-saved', { data })
+            const res = { type: 'group-saved', data, userId: '0' }
+            broadcast(res)
         })
         socket.on('update-group', (group) => {
-            gIo.emit('group-updated', group)
+            const res = { type: 'group-updated', group, userId: '0' }
+            broadcast(res)
         })
     })
 }
@@ -73,20 +82,13 @@ async function emitToUser({ type, data, userId }) {
 
 // If possible, send to all sockets BUT not the current socket 
 // Optionally, broadcast to a room / to all
-async function broadcast({ type, data, room = null, userId }) {
+async function broadcast({ type, data, userId }) {
     userId = userId.toString()
-
     logger.info(`Broadcasting event: ${type}`)
     const excludedSocket = await _getUserSocket(userId)
-    if (room && excludedSocket) {
-        logger.info(`Broadcast to room ${room} excluding user: ${userId}`)
-        excludedSocket.broadcast.to(room).emit(type, data)
-    } else if (excludedSocket) {
+    if (excludedSocket) {
         logger.info(`Broadcast to all excluding user: ${userId}`)
         excludedSocket.broadcast.emit(type, data)
-    } else if (room) {
-        logger.info(`Emit to room: ${room}`)
-        gIo.to(room).emit(type, data)
     } else {
         logger.info(`Emit to all`)
         gIo.emit(type, data)
