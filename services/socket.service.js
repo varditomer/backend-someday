@@ -27,8 +27,9 @@ function setupSocketAPI(http) {
             logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
             delete socket.userId
         })
-        socket.on('save-task', (savedTask) => {
-            const res = { type: 'task-saved', savedTask, userId: '0' }
+        socket.on('save-task', ({savedTask, loggedinUser} ) => {
+            console.log(`savedTask:`, savedTask)
+            const res = { type: 'task-saved', data: savedTask, userId: loggedinUser._id }
             broadcast(res)
         })
         socket.on('remove-task', (removedTask) => {
@@ -82,7 +83,9 @@ async function emitToUser({ type, data, userId }) {
 
 // If possible, send to all sockets BUT not the current socket 
 // Optionally, broadcast to a room / to all
-async function broadcast({ type, data, room = null, userId }) {
+async function broadcast({ type, data, userId }) {
+    console.log(`userId:`, userId)
+    console.log(`data:`, data)
     userId = userId.toString()
     logger.info(`Broadcasting event: ${type}`)
     const excludedSocket = await _getUserSocket(userId)

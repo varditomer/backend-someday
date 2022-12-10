@@ -9,9 +9,9 @@ async function login(username, password) {
     logger.debug(`auth.service - login with username: ${username}`)
 
     const user = await userService.getByUsername(username)
-    //todo: add google auth - no password needed.
     if (!user) return Promise.reject('Invalid username or password')
-
+    
+    //todo: add google auth - no password needed.
     const match = await bcrypt.compare(password, user.password)
     if (!match) return Promise.reject('Invalid username or password')
 
