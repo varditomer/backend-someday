@@ -27,37 +27,36 @@ function setupSocketAPI(http) {
             logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
             delete socket.userId
         })
-        socket.on('save-task', ({savedTask, loggedinUser} ) => {
-            console.log(`savedTask:`, savedTask)
+        socket.on('save-task', ({ savedTask, loggedinUser }) => {
             const res = { type: 'task-saved', data: savedTask, userId: loggedinUser._id }
             broadcast(res)
         })
-        socket.on('remove-task', (removedTask) => {
-            const res = { type: 'task-removed', removedTask, userId: '0' }
+        socket.on('remove-task', ({ removedTask, loggedinUser }) => {
+            const res = { type: 'task-removed', data: removedTask, userId: loggedinUser._id }
             broadcast(res)
         })
-        socket.on('duplicate-tasks', (tasksToDuplicate) => {
-            const res = { type: 'tasks-duplicated', tasksToDuplicate, userId: '0' }
+        socket.on('duplicate-tasks', ({ tasksToDuplicate, loggedinUser }) => {
+            const res = { type: 'tasks-duplicated', data: tasksToDuplicate, userId: loggedinUser._id }
             broadcast(res)
         })
-        socket.on('remove-group', (group) => {
-            const res = { type: 'group-removed', group, userId: '0' }
+        socket.on('remove-group', ({ group, loggedinUser }) => {
+            const res = { type: 'group-removed', data: group, userId: loggedinUser._id }
             broadcast(res)
         })
-        socket.on('save-board', (boardData) => {
-            const res = { type: 'board-saved', boardData, userId: '0' }
+        socket.on('save-board', ({ boardData, loggedinUser }) => {
+            const res = { type: 'board-saved', data: boardData, userId: loggedinUser._id }
             broadcast(res)
         })
-        socket.on('add-board', (boardData) => {
-            const res = { type: 'board-added', boardData, userId: '0' }
+        socket.on('add-board', ({ boardData, loggedinUser }) => {
+            const res = { type: 'board-added', data: boardData, userId: loggedinUser._id }
             broadcast(res)
         })
-        socket.on('save-group', (data) => {
-            const res = { type: 'group-saved', data, userId: '0' }
+        socket.on('save-group', ({ data, loggedinUser }) => {
+            const res = { type: 'group-saved', data, userId: loggedinUser._id }
             broadcast(res)
         })
-        socket.on('update-group', (group) => {
-            const res = { type: 'group-updated', group, userId: '0' }
+        socket.on('update-group', ({ group, loggedinUser }) => {
+            const res = { type: 'group-updated', data: group, userId: loggedinUser._id }
             broadcast(res)
         })
     })
@@ -84,8 +83,6 @@ async function emitToUser({ type, data, userId }) {
 // If possible, send to all sockets BUT not the current socket 
 // Optionally, broadcast to a room / to all
 async function broadcast({ type, data, userId }) {
-    console.log(`userId:`, userId)
-    console.log(`data:`, data)
     userId = userId.toString()
     logger.info(`Broadcasting event: ${type}`)
     const excludedSocket = await _getUserSocket(userId)
