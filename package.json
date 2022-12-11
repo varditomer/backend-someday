@@ -4,8 +4,8 @@
     "description": "production ready server",
     "main": "server.js",
     "scripts": {
-        "start": "nodemon server.js",
-        "server:dev": "nodemon server.js",
+        "start": "node server.js",
+        "run dev": "nodemon server.js",
         "server:prod": "set NODE_ENV=production&&node server.js"
     },
     "author": "Me",
