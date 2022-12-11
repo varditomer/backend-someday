@@ -12,12 +12,10 @@ module.exports = {
     add
 }
 
-async function query(filterBy = {}) {
-    const criteria = _buildCriteria(filterBy)
+async function query() {
     try {
         const collection = await dbService.getCollection('user')
-        var users = await collection.find(criteria).toArray()
-        console.log(`users`, users)
+        var users = await collection.find().toArray()
         users = users.map(user => {
             delete user.password
             user.createdAt = ObjectId(user._id).getTimestamp()
