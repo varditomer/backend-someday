@@ -24,6 +24,7 @@ if (process.env.NODE_ENV === 'production') {
 const boardRoutes = require('./api/board/board.routes')
 const groupRoutes = require('./api/group/group.routes')
 const taskRoutes = require('./api/task/task.routes')
+const labelRoutes = require('./api/label/label.routes')
 const userRoutes = require('./api/user/user.routes')
 const activityRoutes = require('./api/activity/activity.routes')
 const authRoutes = require('./api/auth/auth.routes')
@@ -42,6 +43,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/board', boardRoutes)
 app.use('/api/group', groupRoutes)
 app.use('/api/task', taskRoutes)
+app.use('/api/label', labelRoutes)
 setupSocketAPI(http)
 
 // Make every server-side-route to match the index.html
