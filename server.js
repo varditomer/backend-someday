@@ -37,7 +37,7 @@ const setupAsyncLocalStorage = require('./middlewares/setupAls.middleware')
 app.all('*', setupAsyncLocalStorage)
 
 app.use('/api/auth', authRoutes)
-// app.use('/api/user', userRoutes)
+app.use('/api/user', userRoutes)
 // app.use('/api/activity', activityRoutes)
 app.use('/api/board', boardRoutes)
 app.use('/api/group', groupRoutes)
