@@ -20,7 +20,6 @@ async function login(req, res) {
 async function signup(req, res) {
     try {
         const credentials = req.body
-        console.log(credentials);
         // Never log passwords
         // logger.debug(credentials)
         const account = await authService.signup(credentials)
