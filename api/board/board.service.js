@@ -4,11 +4,13 @@ const utilService = require('../../services/util.service')
 const ObjectId = require('mongodb').ObjectId
 
 async function query(id) {
+    console.log(`id`, id)
     try {
         let board
         const collection = await dbService.getCollection('board')
+        console.log(`HERERERE`)
         if (id) board = await collection.findOne({ _id: ObjectId(id) })
-        else board = (await collection.find().toArray())[0]
+        else board = (await collection.findOne())
         const dataMap = _getDataMap(board)
         const miniBoards = await _getMiniBoards()
         const stats = _getBoardStats(board, dataMap.tasks)
