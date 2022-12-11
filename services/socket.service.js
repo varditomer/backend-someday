@@ -47,8 +47,8 @@ function setupSocketAPI(http) {
             const res = { type: 'board-saved', data: savedBoard, userId: loggedinUser._id }
             broadcast(res)
         })
-        socket.on('add-board', ({ savedBoard, loggedinUser }) => {
-            const res = { type: 'board-added', data: savedBoard, userId: loggedinUser._id }
+        socket.on('add-board', ({ boardData, loggedinUser }) => {
+            const res = { type: 'board-added', data: boardData, userId: loggedinUser._id }
             broadcast(res)
         })
         socket.on('save-group', ({ data, loggedinUser }) => {
