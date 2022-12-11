@@ -15,7 +15,13 @@ async function query() {
 async function update(label, type) {
     try {
         const collection = await dbService.getCollection('label')
-        await collection.updateOne({ type, db: { id: label._id } }, {$push:{ ...label }})
+        const labels = (await collection.findOne(type)).toArray()
+        const idx = labels.db.findIndex(anyLabel => anyLabel.id === label.id)
+        if (idx !== -1) {
+            labels.db[idx] = {...labels.db[idx], label}
+        }
+        await collection.updateOne({type},{labels})
+        // await collection.updateOne({ type, db: { id: label.id } }, {$push:{ ...label }})
         return (await collection.find()).toArray()
     } catch (err) {
         logger.error(`cannot update label ${label._id}`, err)
@@ -26,7 +32,7 @@ async function update(label, type) {
 async function add(label, type) {
     try {
         const collection = await dbService.getCollection('label')
-        collection.updateOne({ type }, { $push: label })
+        collection.updateOne({ type, db: {id: label.id}}, { $push: {...label} })
         return (await collection.find()).toArray()
     } catch (err) {
         logger.error(`cannot add label ${label.id}`, err)
