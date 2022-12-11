@@ -6,6 +6,7 @@ async function query(req, res) {
     // const parsedFilter = JSON.parse(req.query.filterBy)
     const id  = req.params?.id || ''
     const data = await boardService.query(id)
+    console.log(`data`, data)
     res.send(data)
   } catch (err) {
     logger.error('Failed to get boards', err)
