@@ -1,6 +1,7 @@
 const dbService = require('../../services/db.service')
 const logger = require('../../services/logger.service')
 const utilService = require('../../services/util.service')
+const userService = require('../../api/user/user.service')
 const ObjectId = require('mongodb').ObjectId
 
 async function query(id) {
@@ -11,7 +12,7 @@ async function query(id) {
         console.log(`HERERERE`)
         if (id) board = await collection.findOne({ _id: ObjectId(id) })
         else board = (await collection.findOne())
-        const dataMap = _getDataMap(board)
+        const dataMap = await _getDataMap(board)
         const miniBoards = await _getMiniBoards()
         const stats = _getBoardStats(board, dataMap.tasks)
         const res = {
@@ -106,39 +107,8 @@ async function removeManyTasks(taskIds, boardId) {
 
 
 
-function _getDataMap(board) {
-    const personFilter = [
-        {
-            _id: "u102",
-            fullname: "Refael Abramov",
-            imgUrl: "src/assets/imgs/refael-avatar.png",
-            color: 'rgb(236, 105, 192)',
-            isAdmin: true,
-            contact: {
-                mail: 'refaelavramov@gmail.com'
-            }
-        },
-        {
-            _id: "u103",
-            fullname: "Tomer Vardi",
-            imgUrl: "src/assets/imgs/tomer-avatar.png",
-            color: 'rgb(55, 124, 80)',
-            isAdmin: true,
-            contact: {
-                mail: 'tomervardi@gmail.com'
-            }
-        },
-        {
-            _id: "u104",
-            fullname: "Ronen Boxer",
-            imgUrl: "src/assets/imgs/ronen-avatar.png",
-            color: 'rgb(238, 109, 64)',
-            isAdmin: true,
-            contact: {
-                mail: 'ronenboxer@gmail.com'
-            }
-        }
-    ]
+async function _getDataMap(board) {
+    const personFilter = await userService.query()
     const groupTitle = []
     const taskFilter = {
         status: [],
@@ -156,7 +126,7 @@ function _getDataMap(board) {
         })
     })
     return {
-        groupTitle,
+        group: groupTitle,
         tasks: { ...taskFilter, person: personFilter }
     }
 }
