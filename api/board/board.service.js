@@ -44,6 +44,7 @@ async function add(board) {
         newBoard = _connectIds(newBoard)
         await update(newBoard)
         const dataMap = _getDataMap(board)
+        console.log(`dataMap`, dataMap)
         const miniBoards = await _getMiniBoards()
         const stats = _getBoardStats(board, dataMap.tasks)
         return {
