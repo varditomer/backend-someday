@@ -5,11 +5,9 @@ const userService = require('../../api/user/user.service')
 const ObjectId = require('mongodb').ObjectId
 
 async function query(id) {
-    console.log(`id`, id)
     try {
         let board
         const collection = await dbService.getCollection('board')
-        console.log(`HERERERE`)
         if (id) board = await collection.findOne({ _id: ObjectId(id) })
         else board = (await collection.findOne())
         const dataMap = await _getDataMap(board)
@@ -109,6 +107,7 @@ async function removeManyTasks(taskIds, boardId) {
 
 async function _getDataMap(board) {
     const personFilter = await userService.query()
+    console.log(personFilter);
     const groupTitle = []
     const taskFilter = {
         status: [],
