@@ -91,14 +91,14 @@ async function add(user) {
         }
         const collection = await dbService.getCollection('user')
         await collection.insertOne(userToAdd)
-        const boardCol = (await dbService.getCollection('board'))
-        const boards = boardCol.toArray()
-        boards.forEach(board => {
-            if (!board.members) board.members = []
-            board.members.push(userToAdd)
-        })
-        await collection.updateOne({_id: ObjectId(boards[0]._id)}, {$set: boards[0]})
-        await collection.updateOne({_id: ObjectId(boards[1]._id)}, {$set: boards[1]})
+        // const boardCol = (await dbService.getCollection('board'))
+        // const boards = boardCol.toArray()
+        // boards.forEach(board => {
+        //     if (!board.members) board.members = []
+        //     board.members.push(userToAdd)
+        // })
+        // await collection.updateOne({ _id: ObjectId(boards[0]._id) }, { $set: boards[0] })
+        // await collection.updateOne({ _id: ObjectId(boards[1]._id) }, { $set: boards[1] })
         return userToAdd
     } catch (err) {
         logger.error('cannot insert user', err)

@@ -83,6 +83,7 @@ async function emitToUser({ type, data, userId }) {
 // If possible, send to all sockets BUT not the current socket 
 // Optionally, broadcast to a room / to all
 async function broadcast({ type, data, userId }) {
+
     userId = userId.toString()
     logger.info(`Broadcasting event: ${type}`)
     const excludedSocket = await _getUserSocket(userId)
@@ -100,11 +101,13 @@ async function _getUserSocket(userId) {
     const socket = sockets.find(s => s.userId === userId)
     return socket
 }
+
 async function _getAllSockets() {
     // return all Socket instances
     const sockets = await gIo.fetchSockets()
     return sockets
 }
+
 async function _printSockets() {
     const sockets = await _getAllSockets()
     console.log(`Sockets: (count: ${sockets.length}):`)

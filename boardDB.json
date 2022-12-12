@@ -1,596 +1,594 @@
 {
-    "_id" : ObjectId("639077a55232d8771e735007"),
-    "title" : "Flow",
-    "isStarred" : true,
-    "createdBy" : {
-        "_id" : "u102",
-        "fullname" : "Refael Abramov",
-        "imgUrl" : "src/assets/imgs/refael-avatar.png"
+    "_id": ObjectId("6395a8705f7e5666349c8192"),
+    "title": "Flow",
+    "isStarred": true,
+    "createdBy": {
+        "_id": "u102",
+        "fullname": "Refael Abramov",
+        "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png"
     },
-    "members" : [
+    "members": [
         {
-            "_id" : "u102",
-            "fullname" : "Refael Abramov",
-            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+            "_id": "u102",
+            "fullname": "Refael Abramov",
+            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png"
         },
         {
-            "_id" : "u103",
-            "fullname" : "Tomer Vardi",
-            "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+            "_id": "u103",
+            "fullname": "Tomer Vardi",
+            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
         },
         {
-            "_id" : "u104",
-            "fullname" : "Ronen Boxer",
-            "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+            "_id": "u104",
+            "fullname": "Ronen Boxer",
+            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png"
         }
     ],
-    "groups" : [
+    "groups": [
         {
-            "_id" : "Yha4d",
-            "title" : "dfbycsdcsdc\n\n",
-            "boardId" : "639077a55232d8771e735007",
-            "style" : {
-                "color" : "#fdab3d",
-                "light" : "#fdab3d99"
+            "_id": "Yha4d",
+            "title": "To production",
+            "boardId": "639077a55232d8771e735007",
+            "style": {
+                "color": "#fdab3d",
+                "light": "#fdab3d99"
             },
-            "tasks" : [
+            "tasks": [
                 {
-                    "groupId" : "Yha4d",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Support adding files",
-                    "_id" : "3JB9B",
-                    "person" : [
+                    "groupId": "Yha4d",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Support adding files",
+                    "_id": "3JB9B",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "style" : "background-image: url(src/assets/imgs/refael-avatar.png)",
-                            "initials" : "RA",
-                            "fullname" : "Refael Abramov",
-                            "pic" : true
+                            "_id": "u102",
+                            "style": "background-image: url(https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png)",
+                            "initials": "RA",
+                            "fullname": "Refael Abramov",
+                            "pic": true
                         },
                         {
-                            "_id" : "u103",
-                            "fullname" : "Tomer Vardi",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                            "color" : "rgb(55, 124, 80)",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "tomervardi@gmail.com"
+                            "_id": "u103",
+                            "fullname": "Tomer Vardi",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                            "color": "rgb(55, 124, 80)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "tomervardi@gmail.com"
                             }
                         }
                     ],
-                    "priority" : "asckj",
-                    "status" : "sdc34",
-                    "date" : 1669932000000.0
+                    "priority": "asckj",
+                    "status": "sdc34",
+                    "date": 1669932000000.0
                 },
                 {
-                    "_id" : "7teZJ",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "Yha4d",
-                    "title" : "Build flow",
-                    "date" : 1670277600000.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(9),
-                            "day" : NumberInt(30),
-                            "year" : NumberInt(2022)
+                    "_id": "7teZJ",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "Yha4d",
+                    "title": "Build flow",
+                    "date": 1670277600000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(9),
+                            "day": NumberInt(30),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(13),
-                            "year" : NumberInt(2022)
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(13),
+                            "year": NumberInt(2022)
                         }
                     },
-                    "priority" : "gbf0g",
-                    "status" : "dfbyc",
-                    "person" : [
+                    "priority": "gbf0g",
+                    "status": "dfbyc",
+                    "person": [
                         {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                            "contact" : {
-                                "mail" : "ronenboxer@gmail.com"
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
                             }
                         }
                     ]
                 },
                 {
-                    "_id" : "ldnow",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "Yha4d",
-                    "title" : "Create Features",
-                    "text" : "D&D, Kanban, Perfect-pixel",
-                    "person" : [
-                        {
-                            "_id" : "u102",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
-                            "fullname" : "Refael Abramov",
-                            "pic" : true,
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
-                            }
+                    "_id": "KT5Eo",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "Yha4d",
+                    "title": "Build demo data",
+                    "date": 1670450400000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(5),
+                            "year": NumberInt(2022)
                         },
-                        {
-                            "_id" : "u103",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                            "fullname" : "Tomer Vardi",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
-                            }
-                        },
-                        {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "ronenboxer@gmail.com"
-                            }
-                        }
-                    ],
-                    "status" : "34f9e",
-                    "date" : 1670709600000.0,
-                    "priority" : "gbf0g",
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(10),
-                            "day" : NumberInt(12),
-                            "year" : NumberInt(2022)
-                        },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(30),
-                            "year" : NumberInt(2022)
-                        }
-                    }
-                },
-                {
-                    "_id" : "KT5Eo",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "Yha4d",
-                    "title" : "Build demo data",
-                    "date" : 1670450400000.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(5),
-                            "year" : NumberInt(2022)
-                        },
-                        "end" : {
-                            "month" : NumberInt(0),
-                            "day" : NumberInt(11),
-                            "year" : NumberInt(2022)
+                        "end": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(11),
+                            "year": NumberInt(2022)
                         }
                     },
-                    "priority" : "efv9e",
-                    "status" : "qwdlk",
-                    "comments" : [
+                    "priority": "efv9e",
+                    "status": "qwdlk",
+                    "comments": [
                         {
-                            "_id" : "ZyPnm",
-                            "taskId" : "adc8w",
-                            "txt" : "@Tomer Vardi where is my coffee?",
-                            "createdAt" : 1590999817436.0,
-                            "byMember" : {
-                                "_id" : "u104",
-                                "fullname" : "Ronen Boxer",
-                                "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                            "_id": "ZyPnm",
+                            "taskId": "adc8w",
+                            "txt": "@Tomer Vardi where is my coffee?",
+                            "createdAt": 1590999817436.0,
+                            "byMember": {
+                                "_id": "u104",
+                                "fullname": "Ronen Boxer",
+                                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png"
                             }
                         },
                         {
-                            "_id" : "ZqPnm",
-                            "taskId" : "adm8w",
-                            "txt" : "@Ronen Boxer in a minute ☕",
-                            "attachment" : "https://sprint-4-company.monday.com/protected_static/14268178/resources/683016563/big-JPEG_29112022_163653_2246356385772545662.jpg",
-                            "createdAt" : 1590999817436.0,
-                            "byMember" : {
-                                "_id" : "u103",
-                                "fullname" : "Tomer Vardi",
-                                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            "_id": "ZqPnm",
+                            "taskId": "adm8w",
+                            "txt": "@Ronen Boxer in a minute ☕",
+                            "attachment": "https://sprint-4-company.monday.com/protected_static/14268178/resources/683016563/big-JPEG_29112022_163653_2246356385772545662.jpg",
+                            "createdAt": 1590999817436.0,
+                            "byMember": {
+                                "_id": "u103",
+                                "fullname": "Tomer Vardi",
+                                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
                             },
-                            "likes" : [
+                            "likes": [
                                 "u104",
                                 "0"
                             ]
                         }
                     ],
-                    "person" : [
+                    "person": [
                         {
-                            "_id" : "u103",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                            "fullname" : "Tomer Vardi",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u103",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                            "fullname": "Tomer Vardi",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         },
                         {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "ronenboxer@gmail.com"
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
                             }
                         }
                     ]
                 },
                 {
-                    "groupId" : "Yha4d",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Support user auth",
-                    "_id" : "dDgQ7",
-                    "person" : [
+                    "groupId": "Yha4d",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Support user auth",
+                    "_id": "dDgQ7",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "fullname" : "Refael Abramov",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
-                            "color" : "rgb(236, 105, 192)",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u102",
+                            "fullname": "Refael Abramov",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                            "color": "rgb(236, 105, 192)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         }
                     ],
-                    "priority" : "efv9e",
-                    "status" : "dfbyc",
-                    "date" : 1666990800000.0
-                }
-            ],
-            "[object Object]" : "style"
-        },
-        {
-            "_id" : "zjyKO",
-            "title" : "Backlog",
-            "boardId" : "639077a55232d8771e735007",
-            "style" : {
-                "color" : "rgb(151,99,212)",
-                "light" : "rgba(151,99,212,0.6)"
-            },
-            "tasks" : [
+                    "priority": "efv9e",
+                    "status": "dfbyc",
+                    "date": 1666990800000.0
+                },
                 {
-                    "_id" : "HCQxe",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "zjyKO",
-                    "title" : "Upload project to Github",
-                    "text" : "Set github pages",
-                    "person" : [
-                        {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                    "_id": "Sxsbk",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "Yha4d",
+                    "title": "Present Our Someday App",
+                    "status": "dfbyc",
+                    "priority": "efv9e",
+                    "date": 1669672800000.0,
+                    "numbers": NumberInt(1212),
+                    "text": "Make a plan B",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(20),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(12),
+                            "year": NumberInt(2022)
                         }
-                    ],
-                    "comments" : [
+                    },
+                    "comments": [
                         {
-                            "_id" : "Zelzm",
-                            "taskId" : "xwe45",
-                            "txt" : "Thanks, great job as always :-)",
-                            "createdAt" : 1670144190647.0,
-                            "byMember" : {
-                                "_id" : "u103",
-                                "fullname" : "Tomer Vardi",
-                                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            "_id": "sbr12",
+                            "taskId": "xwe45",
+                            "txt": "Good luck and have fun",
+                            "createdAt": 1590999817436.0,
+                            "byMember": {
+                                "_id": "u104",
+                                "fullname": "Ronen Boxer",
+                                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png"
                             }
                         },
                         {
-                            "_id" : "ZeSzm",
-                            "taskId" : "xwe45",
-                            "txt" : "Amazing, already forked! 🍴",
-                            "createdAt" : 1670230590647.0,
-                            "byMember" : {
-                                "_id" : "u103",
-                                "fullname" : "Tomer Vardi",
-                                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            "_id": "ZePnm",
+                            "taskId": "xwe45",
+                            "txt": "Good luck 😎",
+                            "createdAt": 1590999817436.0,
+                            "byMember": {
+                                "_id": "u103",
+                                "fullname": "Tomer Vardi",
+                                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                            }
+                        }
+                    ],
+                    "person": [
+                        {
+                            "_id": "u102",
+                            "fullname": "Refael Abramov",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png"
+                        },
+                        {
+                            "_id": "u103",
+                            "fullname": "Tomer Vardi",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                        },
+                        {
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png"
+                        }
+                    ],
+                    "link": {
+                        "url": "https://sprint-4-company.monday.com/boards/3590839107/pulses/3590900012",
+                        "title": "Original Monday"
+                    }
+                }
+            ],
+            "[object Object]": "style"
+        },
+        {
+            "_id": "zjyKO",
+            "title": "Backlog",
+            "boardId": "639077a55232d8771e735007",
+            "style": {
+                "color": "rgb(151,99,212)",
+                "light": "rgba(151,99,212,0.6)"
+            },
+            "tasks": [
+                {
+                    "_id": "HCQxe",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "zjyKO",
+                    "title": "Upload project to Github",
+                    "text": "Set github pages",
+                    "person": [
+                        {
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png"
+                        }
+                    ],
+                    "comments": [
+                        {
+                            "_id": "Zelzm",
+                            "taskId": "xwe45",
+                            "txt": "Thanks, great job as always :-)",
+                            "createdAt": 1670144190647.0,
+                            "byMember": {
+                                "_id": "u103",
+                                "fullname": "Tomer Vardi",
+                                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                            }
+                        },
+                        {
+                            "_id": "ZeSzm",
+                            "taskId": "xwe45",
+                            "txt": "Amazing, already forked! 🍴",
+                            "createdAt": 1670230590647.0,
+                            "byMember": {
+                                "_id": "u103",
+                                "fullname": "Tomer Vardi",
+                                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
                             },
-                            "likes" : [
+                            "likes": [
                                 "u102",
                                 "u104"
                             ]
                         }
                     ],
-                    "status" : "sdc34",
-                    "priority" : "acmksd",
-                    "date" : 1669413600000.0,
-                    "link" : {
-                        "url" : "https://github.com/varditomer/Someday",
-                        "title" : "Someday Github"
+                    "status": "sdc34",
+                    "priority": "acmksd",
+                    "date": 1669413600000.0,
+                    "link": {
+                        "url": "https://github.com/varditomer/Someday",
+                        "title": "Someday Github"
                     },
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(10),
-                            "day" : NumberInt(30),
-                            "year" : NumberInt(2022)
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(30),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(13),
-                            "year" : NumberInt(2022)
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(13),
+                            "year": NumberInt(2022)
                         }
                     }
                 },
                 {
-                    "_id" : "Sxsbk",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "zjyKO",
-                    "title" : "Present Our Someday App",
-                    "status" : "dfbyc",
-                    "priority" : "efv9e",
-                    "date" : 1669672800000.0,
-                    "numbers" : NumberInt(1212),
-                    "text" : "Make a plan B",
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(10),
-                            "day" : NumberInt(20),
-                            "year" : NumberInt(2022)
-                        },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(12),
-                            "year" : NumberInt(2022)
-                        }
-                    },
-                    "comments" : [
+                    "_id": "ldnow",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "zjyKO",
+                    "title": "Create Features",
+                    "text": "D&D, Kanban, Perfect-pixel",
+                    "person": [
                         {
-                            "_id" : "sbr12",
-                            "taskId" : "xwe45",
-                            "txt" : "Good luck and have fun",
-                            "createdAt" : 1590999817436.0,
-                            "byMember" : {
-                                "_id" : "u104",
-                                "fullname" : "Ronen Boxer",
-                                "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                            "_id": "u102",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                            "fullname": "Refael Abramov",
+                            "pic": true,
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         },
                         {
-                            "_id" : "ZePnm",
-                            "taskId" : "xwe45",
-                            "txt" : "Good luck 😎",
-                            "createdAt" : 1590999817436.0,
-                            "byMember" : {
-                                "_id" : "u103",
-                                "fullname" : "Tomer Vardi",
-                                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            "_id": "u103",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                            "fullname": "Tomer Vardi",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
+                            }
+                        },
+                        {
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
                             }
                         }
                     ],
-                    "person" : [
-                        {
-                            "_id" : "u102",
-                            "fullname" : "Refael Abramov",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+                    "status": "34f9e",
+                    "date": 1670709600000.0,
+                    "priority": "gbf0g",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(12),
+                            "year": NumberInt(2022)
                         },
-                        {
-                            "_id" : "u103",
-                            "fullname" : "Tomer Vardi",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png"
-                        },
-                        {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(30),
+                            "year": NumberInt(2022)
                         }
-                    ],
-                    "link" : {
-                        "url" : "https://sprint-4-company.monday.com/boards/3590839107/pulses/3590900012",
-                        "title" : "Original Monday"
                     }
                 },
                 {
-                    "_id" : "3Exi3",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "zjyKO",
-                    "title" : "Make the project ours",
-                    "status" : "db03v",
-                    "priority" : "gbf0g",
-                    "date" : 1668981600000.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(3),
-                            "year" : NumberInt(2022)
+                    "_id": "3Exi3",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "zjyKO",
+                    "title": "Make the project ours",
+                    "status": "db03v",
+                    "priority": "gbf0g",
+                    "date": 1668981600000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(3),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(13),
-                            "year" : NumberInt(2022)
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(13),
+                            "year": NumberInt(2022)
                         }
                     },
-                    "person" : [
+                    "person": [
                         {
-                            "_id" : "u103",
-                            "style" : "background-image: url(src/assets/imgs/tomer-avatar.png)",
-                            "initials" : "TV",
-                            "fullname" : "Tomer Vardi",
-                            "pic" : true
+                            "_id": "u103",
+                            "style": "background-image: url(http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png)",
+                            "initials": "TV",
+                            "fullname": "Tomer Vardi",
+                            "pic": true
                         },
                         {
-                            "_id" : "u102",
-                            "style" : "background-image: url(src/assets/imgs/refael-avatar.png)",
-                            "initials" : "RA",
-                            "fullname" : "Refael Abramov",
-                            "pic" : true
+                            "_id": "u102",
+                            "style": "background-image: url(https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png)",
+                            "initials": "RA",
+                            "fullname": "Refael Abramov",
+                            "pic": true
                         }
                     ]
                 },
                 {
-                    "groupId" : "zjyKO",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Create all base files",
-                    "status" : "34f9e",
-                    "date" : 1668463200000.0,
-                    "comments" : [
-
-                    ],
-                    "_id" : "jpMFf",
-                    "priority" : "acmksd",
-                    "numbers" : NumberInt(55),
-                    "person" : [
+                    "groupId": "zjyKO",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Create all base files",
+                    "status": "34f9e",
+                    "date": 1668463200000.0,
+                    "comments": [],
+                    "_id": "jpMFf",
+                    "priority": "acmksd",
+                    "numbers": NumberInt(55),
+                    "person": [
                         {
-                            "_id" : "u104",
-                            "style" : "background-image: url(src/assets/imgs/ronen-avatar.png)",
-                            "initials" : "RB",
-                            "fullname" : "Ronen Boxer",
-                            "pic" : true
+                            "_id": "u104",
+                            "style": "background-image: url(http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png)",
+                            "initials": "RB",
+                            "fullname": "Ronen Boxer",
+                            "pic": true
                         },
                         {
-                            "_id" : "u102",
-                            "style" : "background-image: url(src/assets/imgs/refael-avatar.png)",
-                            "initials" : "RA",
-                            "fullname" : "Refael Abramov",
-                            "pic" : true
+                            "_id": "u102",
+                            "style": "background-image: url(https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png)",
+                            "initials": "RA",
+                            "fullname": "Refael Abramov",
+                            "pic": true
                         },
                         {
-                            "_id" : "u103",
-                            "fullname" : "Tomer Vardi",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                            "color" : "rgb(55, 124, 80)",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "tomervardi@gmail.com"
+                            "_id": "u103",
+                            "fullname": "Tomer Vardi",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                            "color": "rgb(55, 124, 80)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "tomervardi@gmail.com"
                             }
                         }
                     ]
                 },
                 {
-                    "groupId" : "zjyKO",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Build some backend",
-                    "_id" : "AeYyT",
-                    "person" : [
+                    "groupId": "zjyKO",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Build some backend",
+                    "_id": "AeYyT",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
-                            "fullname" : "Refael Abramov",
-                            "pic" : true,
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u102",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                            "fullname": "Refael Abramov",
+                            "pic": true,
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         },
                         {
-                            "_id" : "u103",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                            "fullname" : "Tomer Vardi",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u103",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                            "fullname": "Tomer Vardi",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         },
                         {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "ronenboxer@gmail.com"
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
                             }
                         }
                     ],
-                    "priority" : "gbf0g",
-                    "status" : "dfbyc",
-                    "date" : 1668204000000.0,
-                    "text" : "Don't forget sockets",
-                    "link" : {
-                        "url" : "https://atlascloud.network/",
-                        "title" : "Atlas"
+                    "priority": "gbf0g",
+                    "status": "dfbyc",
+                    "date": 1668204000000.0,
+                    "text": "Don't forget sockets",
+                    "link": {
+                        "url": "https://atlascloud.network/",
+                        "title": "Atlas"
                     }
                 },
                 {
-                    "_id" : "TDqrs",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "zjyKO",
-                    "title" : "Get familiar with features",
-                    "date" : 1668808800000.0,
-                    "priority" : "asckj",
-                    "status" : "dfbyc",
-                    "person" : [
+                    "_id": "TDqrs",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "zjyKO",
+                    "title": "Get familiar with features",
+                    "date": 1668808800000.0,
+                    "priority": "asckj",
+                    "status": "dfbyc",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "fullname" : "Refael Abramov",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+                            "_id": "u102",
+                            "fullname": "Refael Abramov",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png"
                         }
                     ],
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(1),
-                            "year" : NumberInt(2022)
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(1),
-                            "day" : NumberInt(1),
-                            "year" : NumberInt(2023)
+                        "end": {
+                            "month": NumberInt(1),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2023)
                         }
                     }
                 }
             ]
         },
         {
-            "_id" : "aRWLB",
-            "boardId" : "639077a55232d8771e735007",
-            "title" : "sdc34",
-            "createdAt" : NumberInt(234850123),
-            "style" : {
-                "color" : "#ba3254",
-                "light" : "#ba325499"
+            "_id": "aRWLB",
+            "boardId": "639077a55232d8771e735007",
+            "title": "Working on it",
+            "createdAt": NumberInt(234850123),
+            "style": {
+                "color": "#ba3254",
+                "light": "#ba325499"
             },
-            "byMember" : {
-                "_id" : "u104",
-                "fullname" : "Ronen Boxer",
-                "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+            "byMember": {
+                "_id": "u104",
+                "fullname": "Ronen Boxer",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png"
             },
-            "tasks" : [
+            "tasks": [
                 {
-                    "_id" : "eSHic",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "aRWLB",
-                    "title" : "First team meeting",
-                    "date" : 1666818000000.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(29),
-                            "year" : NumberInt(2022)
+                    "_id": "eSHic",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "aRWLB",
+                    "title": "First team meeting",
+                    "date": 1666818000000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(29),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(29),
-                            "year" : NumberInt(2022)
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(29),
+                            "year": NumberInt(2022)
                         }
                     },
-                    "priority" : "asckj",
-                    "status" : "sdc34",
-                    "person" : [
+                    "priority": "asckj",
+                    "status": "sdc34",
+                    "person": [
                         {
-                            "_id" : "u103",
-                            "fullname" : "Tomer Vardi",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            "_id": "u103",
+                            "fullname": "Tomer Vardi",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
                         },
                         {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png"
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png"
                         },
                         {
-                            "_id" : "u102",
-                            "fullname" : "Refael Abramov",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+                            "_id": "u102",
+                            "fullname": "Refael Abramov",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png"
                         }
                     ],
-                    "comments" : [
+                    "comments": [
                         {
-                            "_id" : "Zeesm",
-                            "taskId" : "xwe45",
-                            "txt" : "Yeah 🎈🎉🎊",
-                            "createdAt" : 1590999817436.0,
-                            "byMember" : {
-                                "_id" : "0",
-                                "fullname" : "Guest",
-                                "imgUrl" : "src/assets/imgs/default-avatar.svg"
+                            "_id": "Zeesm",
+                            "taskId": "xwe45",
+                            "txt": "Yeah 🎈🎉🎊",
+                            "createdAt": 1590999817436.0,
+                            "byMember": {
+                                "_id": "u103",
+                                "fullname": "Tomer Vardi",
+                                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
                             },
-                            "likes" : [
+                            "likes": [
                                 "u102",
                                 "u103"
                             ]
@@ -598,331 +596,329 @@
                     ]
                 },
                 {
-                    "groupId" : "aRWLB",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Setting up workspace",
-                    "_id" : "AK12g",
-                    "person" : [
+                    "groupId": "aRWLB",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Setting up workspace",
+                    "_id": "AK12g",
+                    "person": [
                         {
-                            "_id" : "u103",
-                            "fullname" : "Tomer Vardi",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                            "color" : "rgb(55, 124, 80)",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "tomervardi@gmail.com"
+                            "_id": "u103",
+                            "fullname": "Tomer Vardi",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                            "color": "rgb(55, 124, 80)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "tomervardi@gmail.com"
                             }
                         }
                     ],
-                    "priority" : "gbf0g",
-                    "status" : "dfbyc",
-                    "date" : 1666472400000.0
+                    "priority": "gbf0g",
+                    "status": "dfbyc",
+                    "date": 1666472400000.0
                 },
                 {
-                    "groupId" : "aRWLB",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Opening monday for tasks",
-                    "_id" : "Ndn3v",
-                    "person" : [
+                    "groupId": "aRWLB",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Opening monday for tasks",
+                    "_id": "Ndn3v",
+                    "person": [
                         {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                            "color" : "rgb(238, 109, 64)",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "ronenboxer@gmail.com"
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                            "color": "rgb(238, 109, 64)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
                             }
                         }
                     ],
-                    "priority" : "acmksd",
-                    "status" : "sdc34",
-                    "date" : 1666386000000.0
+                    "priority": "acmksd",
+                    "status": "sdc34",
+                    "date": 1666386000000.0
                 },
                 {
-                    "groupId" : "aRWLB",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Download assets",
-                    "_id" : "WyWTX",
-                    "person" : [
+                    "groupId": "aRWLB",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Download assets",
+                    "_id": "WyWTX",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "fullname" : "Refael Abramov",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
-                            "color" : "rgb(236, 105, 192)",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u102",
+                            "fullname": "Refael Abramov",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                            "color": "rgb(236, 105, 192)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         }
                     ],
-                    "status" : "34f9e",
-                    "priority" : "efv9e",
-                    "date" : 1666126800000.0,
-                    "text" : "Files uploaded"
+                    "status": "34f9e",
+                    "priority": "efv9e",
+                    "date": 1666126800000.0,
+                    "text": "Files uploaded"
                 }
             ]
         },
         {
-            "_id" : "itpQb",
-            "boardId" : "639077a55232d8771e735007",
-            "title" : "Near future tasks",
-            "style" : {
-                "color" : "#794bd1",
-                "light" : "#794bd199"
+            "_id": "itpQb",
+            "boardId": "639077a55232d8771e735007",
+            "title": "Near future tasks",
+            "style": {
+                "color": "#794bd1",
+                "light": "#794bd199"
             },
-            "tasks" : [
+            "tasks": [
                 {
-                    "_id" : "SmxoM",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "itpQb",
-                    "title" : "Meet up with team leader",
-                    "date" : 1672092000000.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(10),
-                            "day" : NumberInt(1),
-                            "year" : NumberInt(2022)
+                    "_id": "SmxoM",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "itpQb",
+                    "title": "Meet up with team leader",
+                    "date": 1672092000000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(17),
-                            "year" : NumberInt(2022)
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(17),
+                            "year": NumberInt(2022)
                         }
                     },
-                    "status" : "qwdlk",
-                    "priority" : "acmksd",
-                    "person" : [
+                    "status": "qwdlk",
+                    "priority": "acmksd",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "fullname" : "Refael Abramov",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png"
+                            "_id": "u102",
+                            "fullname": "Refael Abramov",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png"
                         }
                     ]
                 },
                 {
-                    "_id" : "ukbH6",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "itpQb",
-                    "title" : "Come up with design ideas",
-                    "date" : 1671919200000.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(3),
-                            "year" : NumberInt(2022)
+                    "_id": "ukbH6",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "itpQb",
+                    "title": "Come up with design ideas",
+                    "date": 1671919200000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(3),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(0),
-                            "day" : NumberInt(19),
-                            "year" : NumberInt(2023)
+                        "end": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(19),
+                            "year": NumberInt(2023)
                         }
                     },
-                    "status" : "dfbyc",
-                    "priority" : "efv9e",
-                    "person" : [
+                    "status": "dfbyc",
+                    "priority": "efv9e",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
-                            "fullname" : "Refael Abramov",
-                            "pic" : true,
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u102",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                            "fullname": "Refael Abramov",
+                            "pic": true,
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         },
                         {
-                            "_id" : "u103",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                            "fullname" : "Tomer Vardi",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u103",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                            "fullname": "Tomer Vardi",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         }
                     ]
                 },
                 {
-                    "_id" : "RXSHZ",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "itpQb",
-                    "title" : "Think about app architecture",
-                    "date" : 1671487200000.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(10),
-                            "day" : NumberInt(30),
-                            "year" : NumberInt(2022)
+                    "_id": "RXSHZ",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "itpQb",
+                    "title": "Think about app architecture",
+                    "date": 1671487200000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(30),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(3),
-                            "year" : NumberInt(2022)
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(3),
+                            "year": NumberInt(2022)
                         }
                     },
-                    "status" : "34f9e",
-                    "priority" : "gbf0g",
-                    "person" : [
-
-                    ]
+                    "status": "34f9e",
+                    "priority": "gbf0g",
+                    "person": []
                 },
                 {
-                    "groupId" : "itpQb",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Get together and have some coffee",
-                    "_id" : "YNNd2",
-                    "person" : [
+                    "groupId": "itpQb",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Get together and have some coffee",
+                    "_id": "YNNd2",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
-                            "fullname" : "Refael Abramov",
-                            "pic" : true,
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u102",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                            "fullname": "Refael Abramov",
+                            "pic": true,
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         },
                         {
-                            "_id" : "u103",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                            "fullname" : "Tomer Vardi",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u103",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                            "fullname": "Tomer Vardi",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         },
                         {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "ronenboxer@gmail.com"
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
                             }
                         }
                     ],
-                    "priority" : "asckj",
-                    "status" : "sdc34",
-                    "date" : 1670796000000.0
+                    "priority": "asckj",
+                    "status": "sdc34",
+                    "date": 1670796000000.0
                 },
                 {
-                    "groupId" : "itpQb",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Finish all preparations",
-                    "_id" : "vBf55",
-                    "person" : [
+                    "groupId": "itpQb",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Finish all preparations",
+                    "_id": "vBf55",
+                    "person": [
                         {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                            "color" : "rgb(238, 109, 64)",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "ronenboxer@gmail.com"
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                            "color": "rgb(238, 109, 64)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
                             }
                         }
                     ],
-                    "priority" : "efv9e",
-                    "status" : "dfbyc"
+                    "priority": "efv9e",
+                    "status": "dfbyc"
                 }
             ]
         },
         {
-            "_id" : "byhG8",
-            "boardId" : "639077a55232d8771e735007",
-            "title" : "Bugs",
-            "createdAt" : 238392842234.0,
-            "style" : {
-                "color" : "#4fccc6",
-                "light" : "#4fccc699"
+            "_id": "byhG8",
+            "boardId": "639077a55232d8771e735007",
+            "title": "Bugs",
+            "createdAt": 238392842234.0,
+            "style": {
+                "color": "#4fccc6",
+                "light": "#4fccc699"
             },
-            "byMember" : {
-                "_id" : "u103",
-                "fullname" : "Tomer Vardi",
-                "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+            "byMember": {
+                "_id": "u103",
+                "fullname": "Tomer Vardi",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
             },
-            "tasks" : [
+            "tasks": [
                 {
-                    "_id" : "2ZAXv",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "byhG8",
-                    "title" : "Modal covered when hovering rows",
-                    "date" : 1670230590647.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(10),
-                            "day" : NumberInt(30),
-                            "year" : NumberInt(2022)
+                    "_id": "2ZAXv",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "byhG8",
+                    "title": "Modal covered when hovering rows",
+                    "date": 1670230590647.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(30),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(3),
-                            "year" : NumberInt(2022)
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(3),
+                            "year": NumberInt(2022)
                         }
                     },
-                    "status" : "sdc34",
-                    "priority" : "efv9e",
-                    "person" : [
+                    "status": "sdc34",
+                    "priority": "efv9e",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
-                            "fullname" : "Refael Abramov",
-                            "pic" : true,
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u102",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                            "fullname": "Refael Abramov",
+                            "pic": true,
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         },
                         {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "ronenboxer@gmail.com"
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
                             }
                         }
                     ]
                 },
                 {
-                    "_id" : "ARdtO",
-                    "boardId" : "639077a55232d8771e735007",
-                    "groupId" : "byhG8",
-                    "title" : "Upload img stuck",
-                    "date" : 1670388990647.0,
-                    "timeline" : {
-                        "start" : {
-                            "month" : NumberInt(10),
-                            "day" : NumberInt(30),
-                            "year" : NumberInt(2022)
+                    "_id": "ARdtO",
+                    "boardId": "639077a55232d8771e735007",
+                    "groupId": "byhG8",
+                    "title": "Upload img stuck",
+                    "date": 1670388990647.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(30),
+                            "year": NumberInt(2022)
                         },
-                        "end" : {
-                            "month" : NumberInt(11),
-                            "day" : NumberInt(3),
-                            "year" : NumberInt(2022)
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(3),
+                            "year": NumberInt(2022)
                         }
                     },
-                    "status" : "dfbyc",
-                    "priority" : "asckj",
-                    "person" : [
+                    "status": "dfbyc",
+                    "priority": "asckj",
+                    "person": [
                         {
-                            "_id" : "u103",
-                            "fullname" : "Tomer Vardi",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png"
+                            "_id": "u103",
+                            "fullname": "Tomer Vardi",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
                         }
                     ],
-                    "comments" : [
+                    "comments": [
                         {
-                            "_id" : "Zeesm",
-                            "taskId" : "dzwq34",
-                            "txt" : "I think it happens with large photos",
-                            "createdAt" : 1670316990647.0,
-                            "byMember" : {
-                                "_id" : "0",
-                                "fullname" : "Guest",
-                                "imgUrl" : "src/assets/imgs/default-avatar.svg"
+                            "_id": "Zeesm",
+                            "taskId": "dzwq34",
+                            "txt": "I think it happens with large photos",
+                            "createdAt": 1670316990647.0,
+                            "byMember": {
+                                "_id": "u103",
+                                "fullname": "Tomer Vardi",
+                                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
                             },
-                            "likes" : [
+                            "likes": [
                                 "u102",
                                 "u103",
                                 "u104"
@@ -931,102 +927,102 @@
                     ]
                 },
                 {
-                    "groupId" : "byhG8",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Fix reactivity",
-                    "_id" : "X4NLV",
-                    "person" : [
+                    "groupId": "byhG8",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Fix reactivity",
+                    "_id": "X4NLV",
+                    "person": [
                         {
-                            "_id" : "u104",
-                            "fullname" : "Ronen Boxer",
-                            "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                            "color" : "rgb(238, 109, 64)",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "ronenboxer@gmail.com"
+                            "_id": "u104",
+                            "fullname": "Ronen Boxer",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                            "color": "rgb(238, 109, 64)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "ronenboxer@gmail.com"
                             }
                         }
                     ],
-                    "priority" : "acmksd",
-                    "status" : "34f9e",
-                    "date" : 1670796000000.0
+                    "priority": "acmksd",
+                    "status": "34f9e",
+                    "date": 1670796000000.0
                 },
                 {
-                    "groupId" : "byhG8",
-                    "boardId" : "639077a55232d8771e735007",
-                    "title" : "Filtering by persons",
-                    "_id" : "Hq1kC",
-                    "person" : [
+                    "groupId": "byhG8",
+                    "boardId": "639077a55232d8771e735007",
+                    "title": "Filtering by persons",
+                    "_id": "Hq1kC",
+                    "person": [
                         {
-                            "_id" : "u102",
-                            "imgUrl" : "src/assets/imgs/refael-avatar.png",
-                            "fullname" : "Refael Abramov",
-                            "pic" : true,
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u102",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                            "fullname": "Refael Abramov",
+                            "pic": true,
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         },
                         {
-                            "_id" : "u103",
-                            "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                            "fullname" : "Tomer Vardi",
-                            "isAdmin" : true,
-                            "contact" : {
-                                "mail" : "refaelavramov@gmail.com"
+                            "_id": "u103",
+                            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                            "fullname": "Tomer Vardi",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
                             }
                         }
                     ],
-                    "priority" : "gbf0g",
-                    "status" : "db03v",
-                    "date" : 1670882400000.0
+                    "priority": "gbf0g",
+                    "status": "db03v",
+                    "date": 1670882400000.0
                 }
             ]
         }
     ],
-    "activities" : [
+    "activities": [
         {
-            "_id" : "a101",
-            "txt" : "Changed Color",
-            "createdAt" : NumberInt(154514),
-            "byMember" : {
-                "_id" : "u102",
-                "fullname" : "Refael Abramov",
-                "imgUrl" : "src/assets/imgs/refael-avatar.png"
+            "_id": "a101",
+            "txt": "Changed Color",
+            "createdAt": NumberInt(154514),
+            "byMember": {
+                "_id": "u102",
+                "fullname": "Refael Abramov",
+                "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png"
             },
-            "tasks" : [
+            "tasks": [
                 {
-                    "_id" : "c101",
-                    "title" : "Replace Logo"
+                    "_id": "c101",
+                    "title": "Replace Logo"
                 }
             ]
         }
     ],
-    "cmpsOrder" : [
+    "cmpsOrder": [
         "status",
-        "priority",
         "date",
+        "priority",
         "person",
         "timeline",
         "text",
         "numbers",
         "link"
     ],
-    "kanbanOrder" : {
-        "status" : [
-            "34f9e",
+    "kanbanOrder": {
+        "status": [
             "dfbyc",
             "sdc34",
+            "34f9e",
             "qwdlk",
             "db03v"
         ],
-        "priority" : [
+        "priority": [
             "gbf0g",
             "asckj",
             "efv9e",
             "acmksd"
         ],
-        "date" : [
+        "date": [
             1670709600000.0,
             1670277600000.0,
             1669932000000.0,
@@ -1050,7 +1046,7 @@
             1670388990647.0,
             1670882400000.0
         ],
-        "text" : [
+        "text": [
             "D&D, Kanban, Perfect-pixel",
             "ngvjhvjh",
             "Set github pages",
@@ -1058,45 +1054,800 @@
             "Don't forget sockets",
             "Files uploaded"
         ],
-        "numbers" : [
+        "numbers": [
             NumberInt(23423),
             NumberInt(200),
             NumberInt(435345),
             NumberInt(55),
             NumberInt(121212)
         ],
-        "person" : [
+        "person": [
             {
-                "_id" : "u102",
-                "fullname" : "Refael Abramov",
-                "imgUrl" : "src/assets/imgs/refael-avatar.png",
-                "color" : "rgb(236, 105, 192)",
-                "isAdmin" : true,
-                "contact" : {
-                    "mail" : "refaelavramov@gmail.com"
+                "_id": "u102",
+                "fullname": "Refael Abramov",
+                "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                "color": "rgb(236, 105, 192)",
+                "isAdmin": true,
+                "contact": {
+                    "mail": "refaelavramov@gmail.com"
                 }
             },
             {
-                "_id" : "u103",
-                "fullname" : "Tomer Vardi",
-                "imgUrl" : "src/assets/imgs/tomer-avatar.png",
-                "color" : "rgb(55, 124, 80)",
-                "isAdmin" : true,
-                "contact" : {
-                    "mail" : "tomervardi@gmail.com"
+                "_id": "u103",
+                "fullname": "Tomer Vardi",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                "color": "rgb(55, 124, 80)",
+                "isAdmin": true,
+                "contact": {
+                    "mail": "tomervardi@gmail.com"
                 }
             },
             {
-                "_id" : "u104",
-                "fullname" : "Ronen Boxer",
-                "imgUrl" : "src/assets/imgs/ronen-avatar.png",
-                "color" : "rgb(238, 109, 64)",
-                "isAdmin" : true,
-                "contact" : {
-                    "mail" : "ronenboxer@gmail.com"
+                "_id": "u104",
+                "fullname": "Ronen Boxer",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                "color": "rgb(238, 109, 64)",
+                "isAdmin": true,
+                "contact": {
+                    "mail": "ronenboxer@gmail.com"
                 }
             }
         ]
     },
-    "kanbanType" : "status"
+    "kanbanType": "status",
+    "taskIdOrder": {
+        "status": {
+            "dfbyc": [
+                "ARdtO"
+            ],
+            "sdc34": [
+                "WyWTX",
+                "Ndn3v",
+                "HCQxe",
+                "eSHic",
+                "YNNd2",
+                "2ZAXv"
+            ],
+            "34f9e": [
+                "RXSHZ",
+                "X4NLV"
+            ],
+            "qwdlk": [
+                "KT5Eo",
+                "SmxoM"
+            ],
+            "db03v": [
+                "3Exi3",
+                "Hq1kC"
+            ]
+        }
+    }
+}
+{
+    "_id": ObjectId("6394f3c71bca3b17d5639c1c"),
+    "title": "Team",
+    "archivedAt": 1670706119266.0,
+    "createdBy": {
+        "_id": "u103",
+        "fullname": "Tomer Vardi",
+        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+    },
+    "groups": [
+        {
+            "title": "Content",
+            "boardId": "6394f3c71bca3b17d5639c1c",
+            "createdAt": 1670706188816.0,
+            "createdBy": {
+                "_id": "u103",
+                "fullname": "Tomer Vardi",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+            },
+            "style": {
+                "color": "#fdab3d",
+                "light": "#fdab3d99"
+            },
+            "tasks": [
+                {
+                    "_id": "U6amvX",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Customer care study",
+                    "comments": [],
+                    "createdAt": 1670706188816.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "5ngQM",
+                    "priority": "acmksd",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(9),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(2),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2023)
+                        }
+                    },
+                    "status": "sdc34",
+                    "person": [
+                        {
+                            "_id": "6395955c5f7e5666349c8154",
+                            "fullname": "Refael Abramov",
+                            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                            "color": "rgb(236, 105, 192)",
+                            "isAdmin": true,
+                            "contact": {
+                                "mail": "refaelavramov@gmail.com"
+                            },
+                            "createdAt": "2022-12-11T08:31:24.000Z"
+                        }
+                    ]
+                },
+                {
+                    "_id": "yoVzof",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Email marketing campaign",
+                    "comments": [],
+                    "status": "dfbyc",
+                    "createdAt": 1670706188816.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "5ngQM",
+                    "priority": "efv9e",
+                    "date": 1671055200000.0,
+                    "person": []
+                },
+                {
+                    "groupId": "5ngQM",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Hire campaigner assistant",
+                    "_id": "EiBgk",
+                    "status": "db03v",
+                    "priority": "gbf0g",
+                    "date": 1672264800000.0
+                }
+            ],
+            "_id": "5ngQM"
+        },
+        {
+            "title": "Development",
+            "boardId": "6394f3c71bca3b17d5639c1c",
+            "createdAt": 1670706195483.0,
+            "createdBy": {
+                "_id": "u103",
+                "fullname": "Tomer Vardi",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+            },
+            "style": {
+                "color": "#0086c0",
+                "light": "#0086c099"
+            },
+            "tasks": [
+                {
+                    "_id": "OjIjNz",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Map events on homepage",
+                    "comments": [],
+                    "status": "dfbyc",
+                    "createdAt": 1670706195483.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "4TN7K",
+                    "priority": "asckj",
+                    "date": 1672351200000.0,
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(30),
+                            "year": NumberInt(2022)
+                        }
+                    }
+                },
+                {
+                    "_id": "X34rJK",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Hackathon prep",
+                    "comments": [],
+                    "status": "db03v",
+                    "createdAt": 1670706195483.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "4TN7K",
+                    "priority": "gbf0g",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(7),
+                            "year": NumberInt(2023)
+                        }
+                    }
+                },
+                {
+                    "groupId": "4TN7K",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Deploy gallery",
+                    "_id": "w3a9O",
+                    "priority": "gbf0g",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(9),
+                            "year": NumberInt(2023)
+                        },
+                        "end": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(26),
+                            "year": NumberInt(2023)
+                        }
+                    },
+                    "status": "sdc34"
+                },
+                {
+                    "groupId": "4TN7K",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Development evaluation plan",
+                    "_id": "SLCvK",
+                    "status": "34f9e",
+                    "priority": "acmksd",
+                    "date": 1670882400000.0
+                }
+            ],
+            "_id": "4TN7K"
+        },
+        {
+            "title": "Campaign",
+            "boardId": "6394f3c71bca3b17d5639c1c",
+            "createdAt": 1670706177397.0,
+            "createdBy": {
+                "_id": "u103",
+                "fullname": "Tomer Vardi",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+            },
+            "style": {
+                "color": "#7f5347",
+                "light": "#7f534799"
+            },
+            "tasks": [
+                {
+                    "_id": "2KFeLn",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Finalize kickoff materials",
+                    "comments": [],
+                    "status": "sdc34",
+                    "createdAt": 1670706177397.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "vFLE6",
+                    "priority": "efv9e",
+                    "date": 1671660000000.0
+                },
+                {
+                    "_id": "q21w5a",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Refine objectives",
+                    "comments": [],
+                    "status": "dfbyc",
+                    "createdAt": 1670706177397.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "vFLE6",
+                    "priority": "asckj",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(17),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(24),
+                            "year": NumberInt(2022)
+                        }
+                    }
+                },
+                {
+                    "_id": "Chivdq",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Identify key resources",
+                    "comments": [],
+                    "status": "dfbyc",
+                    "createdAt": 1670706177397.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "vFLE6",
+                    "priority": "asckj",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(3),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(1),
+                            "day": NumberInt(4),
+                            "year": NumberInt(2023)
+                        }
+                    }
+                },
+                {
+                    "groupId": "vFLE6",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Test plan",
+                    "_id": "zzWkw",
+                    "status": "db03v",
+                    "priority": "acmksd",
+                    "date": 1671400800000.0
+                }
+            ],
+            "_id": "vFLE6"
+        },
+        {
+            "title": "QA",
+            "boardId": "6394f3c71bca3b17d5639c1c",
+            "createdAt": 1670706167790.0,
+            "createdBy": {
+                "_id": "u103",
+                "fullname": "Tomer Vardi",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+            },
+            "style": {
+                "color": "#037f4c",
+                "light": "#037f4c99"
+            },
+            "tasks": [
+                {
+                    "_id": "jsrxgl",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Fix cookie bug",
+                    "comments": [],
+                    "status": "dfbyc",
+                    "createdAt": 1670706195483.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "3SQ0h",
+                    "priority": "asckj",
+                    "date": 1671487200000.0
+                },
+                {
+                    "_id": "FvGRsV",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Fix website bugs",
+                    "comments": [],
+                    "status": "34f9e",
+                    "createdAt": 1670706167790.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "3SQ0h",
+                    "priority": "acmksd",
+                    "date": 1671487200000.0
+                },
+                {
+                    "_id": "EPoCLY",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Test product",
+                    "comments": [],
+                    "status": "dfbyc",
+                    "createdAt": 1670706167790.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "3SQ0h",
+                    "priority": "acmksd",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2023)
+                        },
+                        "end": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(31),
+                            "year": NumberInt(2023)
+                        }
+                    }
+                },
+                {
+                    "_id": "HoHZeL",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Survey statisfaction",
+                    "comments": [],
+                    "status": "dfbyc",
+                    "createdAt": 1670706167790.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "3SQ0h",
+                    "priority": "asckj",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(8),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(31),
+                            "year": NumberInt(2022)
+                        }
+                    }
+                }
+            ],
+            "_id": "3SQ0h"
+        },
+        {
+            "title": "PR",
+            "boardId": "6394f3c71bca3b17d5639c1c",
+            "createdAt": 1670706160247.0,
+            "createdBy": {
+                "_id": "u103",
+                "fullname": "Tomer Vardi",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+            },
+            "style": {
+                "color": "#ff642e",
+                "light": "#ff642e99"
+            },
+            "tasks": [
+                {
+                    "_id": "fhzusF",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Monitor budget",
+                    "comments": [],
+                    "status": "sdc34",
+                    "createdAt": 1670706160247.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "gsyRc",
+                    "priority": "efv9e",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(10),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2021)
+                        },
+                        "end": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2023)
+                        }
+                    }
+                },
+                {
+                    "_id": "xVNDXe",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Find vendors",
+                    "comments": [],
+                    "status": "sdc34",
+                    "createdAt": 1670706160247.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "gsyRc",
+                    "priority": "acmksd",
+                    "date": 1672351200000.0
+                },
+                {
+                    "_id": "PdVk3y",
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "title": "Reach new audiences",
+                    "comments": [],
+                    "status": "dfbyc",
+                    "createdAt": 1670706160247.0,
+                    "createdBy": {
+                        "_id": "u103",
+                        "fullname": "Tomer Vardi",
+                        "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+                    },
+                    "groupId": "gsyRc",
+                    "priority": "acmksd"
+                }
+            ],
+            "_id": "gsyRc"
+        },
+        {
+            "_id": "QESAuE",
+            "title": "Marketing",
+            "style": {
+                "color": "#bb3354",
+                "light": "#bb335499"
+            },
+            "tasks": [
+                {
+                    "_id": "lswiY",
+                    "title": "Conduct a risk assesment",
+                    "status": "dfbyc",
+                    "date": 1670792519266.0,
+                    "comments": [],
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "groupId": "QESAuE",
+                    "priority": "acmksd",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(11),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(11),
+                            "year": NumberInt(2023)
+                        }
+                    }
+                },
+                {
+                    "_id": "3f2Xf",
+                    "title": "Conduct comparative analysis",
+                    "status": "db03v",
+                    "date": 1670619719266.0,
+                    "comments": [],
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "groupId": "QESAuE",
+                    "priority": "acmksd",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(0),
+                            "day": NumberInt(1),
+                            "year": NumberInt(2023)
+                        }
+                    }
+                },
+                {
+                    "_id": "y2F9Q",
+                    "title": "Order marketing metarials",
+                    "date": 1670619719266.0,
+                    "comments": [],
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "groupId": "QESAuE",
+                    "status": "sdc34",
+                    "priority": "gbf0g",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(10),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(17),
+                            "year": NumberInt(2022)
+                        }
+                    }
+                }
+            ],
+            "boardId": "6394f3c71bca3b17d5639c1c"
+        },
+        {
+            "_id": "u00hE9",
+            "title": "URGENT",
+            "style": {
+                "color": "#00a359",
+                "light": "#00a35999"
+            },
+            "tasks": [
+                {
+                    "_id": "CDsiI",
+                    "title": "Update contractor agreement",
+                    "date": 1670619719266.0,
+                    "comments": [],
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "groupId": "u00hE9",
+                    "priority": "efv9e",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(10),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(13),
+                            "year": NumberInt(2022)
+                        }
+                    },
+                    "status": "sdc34"
+                },
+                {
+                    "_id": "xZv0O",
+                    "title": "Prep roof for winter",
+                    "date": 1670446919266.0,
+                    "comments": [],
+                    "boardId": "6394f3c71bca3b17d5639c1c",
+                    "groupId": "u00hE9",
+                    "priority": "efv9e",
+                    "timeline": {
+                        "start": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(10),
+                            "year": NumberInt(2022)
+                        },
+                        "end": {
+                            "month": NumberInt(11),
+                            "day": NumberInt(13),
+                            "year": NumberInt(2022)
+                        }
+                    },
+                    "status": "sdc34"
+                }
+            ],
+            "boardId": "6394f3c71bca3b17d5639c1c"
+        }
+    ],
+    "cmpsOrder": [
+        "person",
+        "status",
+        "priority",
+        "timeline",
+        "link",
+        "numbers"
+    ],
+    "kanbanOrder": {
+        "status": [
+            "sdc34",
+            "dfbyc",
+            "db03v",
+            "34f9e"
+        ],
+        "priority": [
+            "acmksd",
+            "efv9e",
+            "gbf0g",
+            "asckj"
+        ],
+        "date": [
+            1671055200000.0,
+            1672264800000.0,
+            1672351200000.0,
+            1670882400000.0,
+            1671660000000.0,
+            1671400800000.0,
+            1671487200000.0,
+            1670792519266.0,
+            1670619719266.0,
+            1670446919266.0
+        ],
+        "text": [],
+        "numbers": [],
+        "person": [
+            {
+                "_id": "u102",
+                "fullname": "Refael Abramov",
+                "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png",
+                "color": "rgb(236, 105, 192)",
+                "isAdmin": true,
+                "contact": {
+                    "mail": "refaelavramov@gmail.com"
+                }
+            },
+            {
+                "_id": "u103",
+                "fullname": "Tomer Vardi",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png",
+                "color": "rgb(55, 124, 80)",
+                "isAdmin": true,
+                "contact": {
+                    "mail": "tomervardi@gmail.com"
+                }
+            },
+            {
+                "_id": "u104",
+                "fullname": "Ronen Boxer",
+                "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png",
+                "color": "rgb(238, 109, 64)",
+                "isAdmin": true,
+                "contact": {
+                    "mail": "ronenboxer@gmail.com"
+                }
+            }
+        ]
+    },
+    "members": [
+        {
+            "_id": "6395db125434ec0041e881ea",
+            "username": "vtomer",
+            "password": "$2b$10$VA0K7RS/.BB6vTL8iSFKoO9QIg/EHVA6Z.hKirzC8zoePtQ11vaRi",
+            "fullname": "Tomer Vardi",
+            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png"
+        },
+        {
+            "_id": "6395db3a5434ec0041e881eb",
+            "username": "basil",
+            "password": "$2b$10$t9rzjsvBYNdLXyAOkwcsjOPpkNWyTpqGK.AVJL.RDurluYtY52VWq",
+            "fullname": "Ronen Boxer",
+            "imgUrl": "http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png"
+        },
+        {
+            "_id": "6395db3c5434ec0041e881ec",
+            "username": "refarefa1",
+            "password": "$2b$10$Cv1DVzEInhGsGuCRnIMDcOyQx9u7mVYprCuhFW3OdNdvfwKA5qYy6",
+            "fullname": "Refael Abramov",
+            "imgUrl": "https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png"
+        }
+    ],
+    "taskIdOrder": {
+        "status": {
+            "sdc34": [
+                "U6amvX",
+                "w3a9O",
+                "2KFeLn",
+                "fhzusF",
+                "xVNDXe",
+                "y2F9Q",
+                "CDsiI",
+                "xZv0O"
+            ],
+            "dfbyc": [
+                "yoVzof",
+                "OjIjNz",
+                "q21w5a",
+                "Chivdq",
+                "jsrxgl",
+                "EPoCLY",
+                "HoHZeL",
+                "PdVk3y",
+                "lswiY"
+            ],
+            "db03v": [
+                "EiBgk",
+                "X34rJK",
+                "zzWkw",
+                "3f2Xf"
+            ],
+            "34f9e": [
+                "SLCvK",
+                "FvGRsV"
+            ]
+        }
+    }
 }
