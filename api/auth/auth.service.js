@@ -20,30 +20,30 @@ async function login(username, password) {
     return user
 }
 
-const user = {
-    username: 'guest',
-    password: '1234',
-    fullname: 'Guest',
-    imgUrl: `https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png`,
-}
-const user2 = {
-    username: 'refarefa1',
-    password: '12345678',
-    fullname: 'Refael Abramov',
-    imgUrl: `https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png`,
-}
-const user3 = {
-    username: 'vtomer',
-    password: '12345678',
-    fullname: 'Tomer Vardi',
-    imgUrl: `http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png`,
-}
-const user4 = {
-    username: 'ronchu',
-    password: 'qwer',
-    fullname: 'Ronen Boxer',
-    imgUrl: `http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png`,
-}
+// const user = {
+//     username: 'guest',
+//     password: '1234',
+//     fullname: 'Guest',
+//     imgUrl: `https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png`,
+// }
+// const user2 = {
+//     username: 'refarefa1',
+//     password: '12345678',
+//     fullname: 'Refael Abramov',
+//     imgUrl: `https://res.cloudinary.com/someday/image/upload/v1670765493/refael-avatar_qxmtkr.png`,
+// }
+// const user3 = {
+//     username: 'vtomer',
+//     password: '12345678',
+//     fullname: 'Tomer Vardi',
+//     imgUrl: `http://res.cloudinary.com/someday/image/upload/v1670708469/tomer-avatar_e1olwt.png`,
+// }
+// const user4 = {
+//     username: 'ronchu',
+//     password: 'qwer',
+//     fullname: 'Ronen Boxer',
+//     imgUrl: `http://res.cloudinary.com/someday/image/upload/v1670765366/ronen-avatar_b077bs.png`,
+// }
 // signup(user)
 // signup(user2)
 // signup(user3)
