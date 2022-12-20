@@ -6,7 +6,7 @@ const boardService = require('../board/board.service')
 async function add(task, isFifo, isDuplicate) {
     task._id = utilService.makeId()
     const group = await groupService.query(task.groupId, task.boardId)
-    console.log(group);
+    // console.log(group);
     isFifo
         ? group.tasks.push(isDuplicate ? _replaceTaskEntitiesIds(task) : task)
         : group.tasks.unshift(isDuplicate ? _replaceTaskEntitiesIds(task) : task)
@@ -39,7 +39,7 @@ async function remove(task) {
     const { groupId, boardId } = task
     if (!task._id || !groupId) return Promise.reject('Cannot remove task')
     const group = await groupService.query(groupId, boardId)
-    console.log(group);
+    // console.log(group);
     if (!group) return Promise.reject('group not found')
     const idx = group.tasks.findIndex(anyTask => anyTask._id === task._id)
     if (idx === -1) return Promise.reject('Task not found and cannot be removed')
@@ -60,7 +60,7 @@ async function addMany(tasks, tasksCopy, boardId) {
             }
         })
     })
-    console.log(board.groups[0])
+    // console.log(board.groups[0])
     boardService.update(board)
 }
 

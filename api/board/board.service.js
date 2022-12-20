@@ -44,7 +44,7 @@ async function add(board) {
         newBoard = _connectIds(newBoard)
         await update(newBoard)
         const dataMap = _getDataMap(board)
-        console.log(`dataMap`, dataMap)
+        // console.log(`dataMap`, dataMap)
         const miniBoards = await _getMiniBoards()
         const stats = _getBoardStats(board, dataMap.tasks)
         return {
@@ -108,7 +108,7 @@ async function removeManyTasks(taskIds, boardId) {
 
 async function _getDataMap(board) {
     const personFilter = await userService.query()
-    console.log(personFilter);
+    // console.log(personFilter);
     const groupTitle = []
     const taskFilter = {
         status: [],

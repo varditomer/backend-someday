@@ -5,7 +5,6 @@ const logger = require('../../services/logger.service')
 const cryptr = new Cryptr(process.env.SECRET1 || 'Secret-Puk-1234')
 
 async function login(username, password) {
-    console.log(`username:`, username)
     logger.debug(`auth.service - login with username: ${username}`)
 
     const user = await userService.getByUsername(username)
