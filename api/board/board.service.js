@@ -10,6 +10,7 @@ async function query(id) {
         const collection = await dbService.getCollection('board')
         if (id) board = await collection.findOne({ _id: ObjectId(id) })
         else board = (await collection.findOne())
+        if (!board.groups) board.groups = []
         const dataMap = await _getDataMap(board)
         const miniBoards = await _getMiniBoards()
         const stats = _getBoardStats(board, dataMap.tasks)
@@ -117,7 +118,7 @@ async function _getDataMap(board) {
         text: [],
         numbers: []
     }
-    board.groups.forEach(group => {
+    board.groups?.forEach(group => {
         if (!groupTitle.includes(group.title)) groupTitle.push(group.title)
         group.tasks.forEach(task => {
             for (let prop in taskFilter) {
@@ -140,7 +141,7 @@ async function _getMiniBoards() {
 
 function _getBoardStats(board, taskDataMap) {
     const valCountMap = {}
-    const taskCount = board.groups.reduce((taskCounter, group) => {
+    const taskCount = board.groups?.reduce((taskCounter, group) => {
         if (!valCountMap[group.title]) valCountMap[group.title] = 0
         valCountMap[group.title]++
         taskCounter += group.tasks.length
@@ -154,7 +155,7 @@ function _getBoardStats(board, taskDataMap) {
             }
         })
         return taskCounter
-    }, 0)
+    }, 0) || {}
     return { valCountMap, taskCount }
 }
 

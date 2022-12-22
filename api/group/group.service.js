@@ -17,6 +17,7 @@ async function add(group, isFifo = true) {
         const { board } = data
         group._id = utilService.makeId()
         const groupToSave = _connectIds(group)
+        if (!board.groups) board.groups = []
         isFifo
             ? board.groups.push(groupToSave)
             : board.groups.unshift(groupToSave)
